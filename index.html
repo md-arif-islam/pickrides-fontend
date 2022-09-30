@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="./vendors/bootstrap/css/bootstrap.min.css" />
+  <!-- owl.carousel  -->
+  <link rel="stylesheet" href="./vendors/owl.carousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./vendors/owl.carousel/assets/owl.theme.default.min.css">
+  <!-- Slick Slider-->
+  <link rel="stylesheet" type="text/css" href="./vendors/slick-slider/css/slick.css" />
+  <!-- Font Awesome 5 -->
+  <link rel="stylesheet" href="./vendors/font-awesome/css/all.min.css" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <!-- Default Styles -->
+  <link rel="stylesheet" href="./css/main.css" />
+  <!-- Title -->
+  <title>Pickrides</title>
+</head>
+
+<body>
+  <!-- HEADER
+	============================================= -->
+  <header class="header">
+    <!-- NAVBAR
+    ============================================= -->
+    <div class="navigation js__navigation">
+      <div class="container">
+        <div class="navigation__main">
+          <!-- Logo -->
+          <div class="">
+            <a class="logo__text" href="#">
+              <img src="./img/logo.png" alt="">
+            </a>
+          </div>
+
+          <!-- Navbar Desktop -->
+          <nav class="navigation__nav">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">How to Book</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Itinerary Search</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">SUSD</a>
+              </li>
+              <li class="navigation__item d-flex align-items-center">
+                <a class="navigation__link" href="#">EN
+                  <img style="padding-left: 10px;" class="navigation__flag" src="./img/us-flag.png" />
+                </a>
+              </li>
+              <li class="navigation__item d-flex align-items-center">
+                <a class="navigation__link" href="#">
+                  <img class="navigation__search" src="./img/search.png" />
+                </a>
+              </li>
+              <li class="navigation__item d-flex align-items-center">
+                <a class="navigation__link" href="#">
+                  <img style="padding-right: 10px;" class="navigation__search" src="./img/cart-icon.png" />
+                  Cart
+                </a>
+              </li>
+            </ul>
+
+            <!-- Navbar Open Bars -->
+            <div class="navigation__open-box">
+              <a class="navigation__open js__sidenav-open">
+                <i class="navigation__open-icon fas fa-bars"></i>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR SIDE
+    ============================================= -->
+    <div class="side-nav side-nav--close js__sidenav-area">
+      <!-- Overlay -->
+      <div class="side-nav__overlay"></div>
+
+      <!-- Main Side Nav -->
+      <div class="side-nav__main">
+        <!-- Navbar Close -->
+        <div class="side-nav__close-box">
+          <a class="side-nav__close js__sidenav-close">
+            <i class="side-nav__close-icon fas fa-times"></i>
+          </a>
+        </div>
+
+        <nav class="side-nav__nav js__main-nav">
+          <!-- Navbar Mobile -->
+          <ul class="side-nav__list">
+            <li class="side-nav__item d-flex align-items-center">
+              <a class="side-nav__link" href="#">
+                <img class="navigation__search" src="./img/search.png" />
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a class="side-nav__link" href="#">How to Book</a>
+            </li>
+            <li class="side-nav__item">
+              <a class="side-nav__link" href="#">Itinerary Search</a>
+            </li>
+            <li class="side-nav__item">
+              <a class="side-nav__link" href="#">SUSD</a>
+            </li>
+            <li class="side-nav__item d-flex align-items-center">
+              <a class="side-nav__link" href="#">EN
+                <img style="padding-left: 10px;" class="navigation__flag" src="./img/us-flag.png" />
+              </a>
+            </li>
+            <li class="side-nav__item d-flex align-items-center">
+              <a class="side-nav__link" href="#">
+                <img style="padding-right: 10px;" class="navigation__search" src="./img/cart-icon.png" />Cart
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- HEADER HERO
+    ============================================= -->
+    <div class="header__main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-stretch header__main--column">
+            <div class="header__heading--box">
+              <h1 class="heading-primary">
+                Get To Your Destination Your Way!
+              </h1>
+              <p class="paragraph">
+                Instantly book door to door transportation. taxis, shuttles,
+                limos, buses & more.
+              </p>
+            </div>
+
+            <div class="testimonials">
+              <div class="testimonials__item">
+                <div class="row">
+                  <div class="col-3 d-flex align-items-center justify-content-center">
+                    <img class="testimonials__item--img" src="./img/testimonial-img.png" alt="">
+                  </div>
+                  <div class="col-8">
+                    <h2>Laura Octavian</h2>
+                    <div class="testimoniall__item--ratings">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <span>4/5</span>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <p>
+                      Far far away, behind the word
+                      mountains, far.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonials__item">
+                <div class="row">
+                  <div class="col-3 d-flex align-items-center justify-content-center">
+                    <img class="testimonials__item--img" src="./img/testimonial-img.png" alt="">
+                  </div>
+                  <div class="col-8">
+                    <h2>Laura Octavian</h2>
+                    <div class="testimoniall__item--ratings">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <span>4/5</span>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <p>
+                      Far far away, behind the word
+                      mountains, far.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch header__main--column">
+            <div class="form__container">
+              <div class="form__heading">
+                <h1>Round Trip</h1>
+                <h2>Oneway</h2>
+              </div>
+              <div class="form__inputs">
+                <form action="">
+                  <input type="text" name="" id="pikup-point" class="form__inputs--picuppoints"
+                    placeholder="Pickup Point">
+                  <input type="text" name="" id="pikup-point" class="form__inputs--picuppoints"
+                    placeholder="Pickup Point">
+                  <input type="text" name="" id="pikup-point" class="form__inputs--picuppoints"
+                    placeholder="Pickup Point">
+                  <input type="text" name="" id="pikup-point" class="form__inputs--picuppoints"
+                    placeholder="Pickup Point">
+                  <input type="text" name="" id="pikup-point" class="form__inputs--picuppoints"
+                    placeholder="Pickup Point">
+                  <input type="text" name="" id="pikup-point" class="form__inputs--picuppoints"
+                    placeholder="Pickup Point">
+                  <input type="text" name="" id="pikup-point" class="form__inputs--picuppoints"
+                    placeholder="Pickup Point">
+                  <button type="submit" class="form__inputs--submitbutton">Find Deals</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENT
+  ============================================= -->
+  <main>
+    <!--  About
+    ============================================= -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section__title">
+              <h1 class="s-title">Why book with us</h1>
+              <p class="s-desc"> It is a long established fact that a reader will be distracted by the readable content
+                of
+                a page when looking at its layout.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="about__cards">
+              <div class="about__cards--img">
+                <img src="./img/customer 1.png" class="img-fluid" alt="">
+              </div>
+              <div class="about__cards--title">
+                <h2>Excellent reputation</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="about__cards">
+              <div class="about__cards--img">
+                <img src="./img/credit-cards 1.png" class="img-fluid" alt="">
+              </div>
+              <div class="about__cards--title">
+                <h2>No credit card fees</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="about__cards">
+              <div class="about__cards--img">
+                <img src="./img/credit-card 1.png" class="img-fluid" alt="">
+              </div>
+              <div class="about__cards--title">
+                <h2>Your purchase is secure</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="about__cards">
+              <div class="about__cards--img">
+                <img src="./img/confirm 1.png" class="img-fluid" alt="">
+              </div>
+              <div class="about__cards--title">
+                <h2>Immediate confirmation</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--  Transfer
+    ============================================= -->
+    <section id="transfer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="transfer__cards">
+              <div class="transfer__card transfer__card--first ">
+                <img src="./img/business-travel 2.png" class="img-fluid" alt="">
+                <h2>Meet & Greet</h2>
+                <p>Your representative will be wating to meet you no matter what happens.</p>
+              </div>
+              <div class="transfer__card custom__scale">
+                <img src="./img/business-travel 3.png" class="img-fluid" alt="">
+                <h2>Fast</h2>
+                <p>No waiting times, no delays- get you to your destination as soon as you want.</p>
+              </div>
+            </div>
+            <div class="transfer__cards">
+              <div class="transfer__card">
+                <img src="./img/business-travel 5.png" class="img-fluid" alt="">
+                <h2>Value</h2>
+                <p>The best value for your money. Pay the rignt price for vehicle of your choice.</p>
+              </div>
+              <div class="transfer__card custom__scale">
+                <img src="./img/business-travel 1.png" class="img-fluid" alt="">
+                <h2>Door to Door</h2>
+                <p>Reach your destination promptly. You won’t need any additional tax or bus.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="transfer__title">
+              <h1>
+                Why book a transfer?
+              </h1>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                of
+                letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+                desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+                search for 'lorem ipsum'</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Project
+    ============================================= -->
+    <section class="projects">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section__title">
+              <h1 class="s-title">Places you may like!</h1>
+            </div>
+          </div>
+        </div>
+        <div class="projects__contant">
+          <div class="projects__contant__button">
+            <ul class="projects__contant__button__group text-center"">
+              <li data-filter=" *" id="btn1">All</li>
+              <li data-filter=".popular">Populor</li>
+              <li data-filter=".adventure">Adventure</li>
+              <li data-filter=".beath">Beath</li>
+            </ul>
+          </div>
+
+          <div class="row grid">
+            <div class="col-lg-3 col-md-4 project-item popular beath">
+              <div class="project_box">
+                <img src="./img/Background.png" alt="" class="img-fluid">
+                <div class="project_box_text">
+                  <p>Tumpak Sewu,<br />
+                    Indonesia</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 project-item popular adventure">
+              <div class="project_box">
+                <img src="./img/Background (1).png" alt="" class="img-fluid">
+                <div class="project_box_text">
+                  <p>Gatra Beach, <br />
+                    China</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 project-item popular adventure">
+              <div class="project_box">
+                <img src="./img/Background (2).png" alt="" class="img-fluid">
+                <div class="project_box_text">
+                  <p>Gatra Beach, <br />
+                    China</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 project-item adventure beath">
+              <div class="project_box">
+                <img src="./img/Rectangle 346.png" alt="" class="img-fluid">
+                <div class="project_box_text">
+                  <p>Westen Villa, <br />
+                    China</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!--  fleet
+    ============================================= -->
+    <section class="fleet">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section__title">
+              <h1 class="s-title">Our fleet (more options for your ride)</h1>
+              <p class="s-desc"> It is a long established fact that a reader will be distracted by the readable content
+                of
+                a page when looking at its layout.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="owl-carousel fleet-carousel">
+            <div class="item">
+              <div class="fleet__content">
+                <div class="card">
+                  <img src="./img/pngwing.png" alt="" />
+                  <div class="card-body">
+                    <h5>Private Sedan</h5>
+                    <a href="#">Show Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="fleet__content">
+                <div class="card">
+                  <img src="./img/pngwing (1).png" alt="" />
+                  <div class="card-body">
+                    <h5>Private Sedan</h5>
+                    <a href="#">Show Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="fleet__content">
+                <div class="card">
+                  <img src="./img/pngwing (2).png" alt="" />
+                  <div class="card-body">
+                    <h5>Private Sedan</h5>
+                    <a href="#">Show Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="fleet__content">
+                <div class="card">
+                  <img src="./img/pngwing.png" alt="" />
+                  <div class="card-body">
+                    <h5>Private Sedan</h5>
+                    <a href="#">Show Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="fleet__content">
+                <div class="card">
+                  <img src="./img/pngwing (1).png" alt="" />
+                  <div class="card-body">
+                    <h5>Private Sedan</h5>
+                    <a href="#">Show Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="fleet__content">
+                <div class="card">
+                  <img src="./img/pngwing (2).png" alt="" />
+                  <div class="card-body">
+                    <h5>Private Sedan</h5>
+                    <a href="#">Show Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="fleet__content">
+                <div class="card">
+                  <img src="./img/pngwing.png" alt="" />
+                  <div class="card-body">
+                    <h5>Private Sedan</h5>
+                    <a href="#">Show Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="fleet__content">
+                <div class="card">
+                  <img src="./img/pngwing (1).png" alt="" />
+                  <div class="card-body">
+                    <h5>Private Sedan</h5>
+                    <a href="#">Show Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="fleet__content">
+                <div class="card">
+                  <img src="./img/pngwing (2).png" alt="" />
+                  <div class="card-body">
+                    <h5>Private Sedan</h5>
+                    <a href="#">Show Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!--  app
+    ============================================= -->
+    <section class="app">
+      <div class="container">
+        <div class="row app_background">
+          <div class="col-md-6 d-flex align-items-stretch app__text">
+            <h1>Downlode Our App</h1>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page It is a
+              long established fact that a reader will be</p>
+            <div class="app__download">
+              <img src="./img/play-store.png" class="img-fluid" alt="">
+              <img src="./img/app-store.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch app__img">
+            <img src="./img/app-img.png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!--  subscribe
+    ============================================= -->
+    <section class="subscribe">
+      <div class="container">
+        <div class="row subscribe__background">
+          <div class="col-12 ">
+            <div class="subscribe__box d-flex align-items-center flex-column justify-content-center">
+              <img src="./img/email 1.png" alt="">
+              <p>Enter your email address and subscribe today to our newsletter. Receive our exclusive promotions in
+                your inbox.</p>
+              <div class="subscribe__input">
+                <form class="subscribe__form" action="">
+                  <input type="email" placeholder="Your Email" class="ermail" id="mail">
+                  <button type="submit">Subscibe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER
+	============================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row footer__first">
+        <div class="col-md-6 footer__left">
+          <img class="footer__logo img-fluid" src="./img/green-logo.png" alt="">
+          <p>We accept all major credit & debit cards.</p>
+          <div class="footer__bankingsimgs">
+            <img class="footer__bankingsimgs--item" src="./img/Group 7402-trimmy.png"">
+            <img class=" footer__bankingsimgs--item" src="./img/Group 7401-trimmy.png"">
+            <img class=" footer__bankingsimgs--item" src="./img/Group 7400-trimmy.png"">
+            <img class=" footer__bankingsimgs--item" src="./img/Group 7400-trimmy.png"">
+            <img class=" footer__bankingsimgs--item" src="./img/Group 7399-trimmy.png"">
+          </div>
+        </div>
+        <div class=" col-md-6 footer__right">
+            <div class="row">
+              <div class="col-6">
+                <h4>Secure shopping made faster.</h4>
+                <p>Shop Without retyping payment Details</p>
+              </div>
+              <div class="col-6">
+                <button>Check out With <img src="./img/paypal 2.png" alt=""></button>
+              </div>
+              <div class="col-12 footer__icons">
+                <h5>
+                  Follow us on
+                </h5>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row footer__second">
+          <div class="col-12 text-center">
+            <div class="footer__second--locations">
+              <a href="">Isla Mujeres</a>
+              <a href="">Cancun</a>
+              <a href="">Playa del Carmen</a>
+              <a href="">Tulum Hotel Zone</a>
+              <a href="">Puerto Morelos</a>
+              <a href="">Paris</a>
+              <a href="">Playa Paraiso</a>
+              <a href="">Playa Mujeres</a>
+              <a href="">Nuevo Vallarta</a>
+              <a href="">Uvero Alto</a>
+              <a href="">Cancun</a>
+            </div>
+            <div class="footer__second--terms">
+              <a href="">Terms</a>
+              <a href="">Privacy</a>
+              <a href="">Sitemap</a>
+              <a href="">Affiliate Program</a>
+              <a href="">Help</a>
+              <a href="">Blog</a>
+              <a href="">API</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row footer__copyright">
+          <div class="col-12 ">
+            <div class="footer__copyright--text text-center">
+              <p>© 2022 Pickrides - All right reserved.</p>
+            </div>
+          </div>
+        </div>
+  </footer>
+
+  <!-- Bootstrap 4 Scripts-->
+  <script src=" ./vendors/jquery/jquery-slim.min.js"></script>
+  <script src="./vendors/popper/popper.min.js"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="./vendors/slick-slider/js/slick.min.js"></script>
+  <!-- owl.carousel -->
+  <script src="./vendors/owl.carousel/owl.carousel.min.js"></script>
+
+  <script src="./vendors/isotope-layout/isotope.pkgd.min.js"></script>
+  <!-- Waypoint -->
+  <script type="text/javascript" src="./vendors/waypoint/jquery.waypoints.min.js"></script>
+  <!-- Navigation -->
+  <script src="./js/navigation.js"></script>
+  <!-- Js -->
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

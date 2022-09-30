@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+// html {
+//   font-size: 62.5%;
+// }
+
+body {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7;
+  box-sizing: border-box;
+  color: $color-grey-dark;
+  transition: margin 0.9s;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}

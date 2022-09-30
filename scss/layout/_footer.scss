@@ -1,0 +1,151 @@
+.footer {
+  background-color: #fcfeff;
+  padding: 120px 0;
+
+  &__first {
+    padding: 5rem 0;
+    background-color: #fafafa;
+    border-bottom: 1px solid rgba(206, 206, 206, 0.22);
+  }
+
+  &__left {
+    padding: 0 4rem;
+    p {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      text-align: left;
+      color: #000000;
+    }
+  }
+
+  &__logo {
+    padding-bottom: 4rem;
+  }
+
+  &__bankingsimgs {
+    display: inline-block;
+
+    &--item {
+      margin-right: 5px;
+    }
+  }
+
+  &__right {
+    padding: 0 4rem;
+
+    h4 {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 203.5%;
+      text-align: left;
+      color: #000000;
+    }
+
+    p {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 203.5%;
+      text-align: left;
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    button {
+      padding: 10px 15px;
+      background: linear-gradient(84.89deg, #004077 -68.22%, #0077cc 132.22%);
+      border-radius: 10px;
+      color: #fff;
+      border: none;
+      outline: none;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 17px;
+      text-align: center;
+      letter-spacing: 0.025em;
+      text-transform: capitalize;
+      img {
+        padding-left: 5px;
+      }
+    }
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    h5 {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 203.5%;
+      text-align: left;
+      color: #000000;
+      padding-right: 20px;
+    }
+
+    i {
+      width: 20px;
+      height: 10px;
+      font-size: 25px;
+      line-height: 3px;
+      color: #ffc833;
+      margin: 0 10px;
+    }
+  }
+
+  &__second {
+    padding: 3rem 0;
+    background-color: #fafafa;
+    border-bottom: 1px solid rgba(206, 206, 206, 0.22);
+
+    &--locations,
+    &--terms {
+      padding: 10px 0;
+      a {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        padding: 0 5px;
+        line-height: 241.5%;
+        text-align: center;
+        text-transform: capitalize;
+        color: rgba(0, 0, 0, 0.7);
+        border-right: 1px solid rgba(0, 0, 0, 0.7);
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    padding: 2rem 0;
+    background-color: #fafafa;
+
+    &--text {
+      p {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.4);
+        margin: 0;
+      }
+    }
+  }
+}

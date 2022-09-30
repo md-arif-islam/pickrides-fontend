@@ -1,0 +1,407 @@
+#about {
+  background-color: #fcfeff;
+
+  .about__cards {
+    padding: 40px 0 20px 0;
+    &--img {
+      background-color: #fff;
+      display: inline-block;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
+    }
+
+    &--title {
+      padding: 20px 0 10px 0;
+      h2 {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        color: #000000;
+      }
+    }
+  }
+}
+
+#transfer {
+  background-color: #fcfcfc;
+  .transfer__cards {
+    display: flex;
+    flex-direction: row;
+
+    .transfer__card {
+      margin: 35px;
+      padding: 15px;
+      text-align: center;
+      background-color: #fff;
+      box-shadow: 0px 11.2941px 14.1176px #f1f4f9;
+      border-radius: 14.1176px;
+
+      &.custom__scale {
+        transform: translateY(50px);
+      }
+
+      h2 {
+        padding-top: 10px;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 35px;
+        letter-spacing: -0.015em;
+        color: #000000;
+      }
+
+      p {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        letter-spacing: -0.04em;
+        color: #89969f;
+      }
+
+      &--first {
+        background: linear-gradient(84deg, #004077 -71.2%, #0077cc 124.92%);
+        h2,
+        p {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .transfer__title {
+    padding: 80px 50px;
+    h1 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 30px;
+      letter-spacing: -0.005em;
+      color: #000000;
+      padding-bottom: 50px;
+    }
+
+    p {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 34px;
+      letter-spacing: 0.035em;
+      color: #a0a0a0;
+    }
+  }
+}
+
+.projects {
+  background-color: #f9f9f9;
+  position: relative;
+  height: auto;
+
+  &__contant {
+    .grid {
+      position: relative;
+      height: auto;
+    }
+
+    &__button {
+      padding: 20px 0;
+      &__group {
+        margin: 10px 0;
+        list-style: none;
+
+        li {
+          display: inline-block;
+          margin: 8px 3px;
+          cursor: pointer;
+          color: rgba(0, 0, 0, 0.5);
+          padding: 15px;
+          font-weight: 500;
+          transition: 0.3s ease;
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 22px;
+
+          &:hover,
+          &.active {
+            color: #004077;
+            border-radius: 10px;
+            background-color: #fff;
+          }
+        }
+      }
+    }
+
+    .project_box {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      margin: 30px 0 20px 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .project_box_text {
+        opacity: 1;
+        background: linear-gradient(
+          180deg,
+          rgb(0 0 0 / 0%) 2.88%,
+          rgba(0, 0, 0, 0.8) 80%
+        );
+        position: absolute;
+        top: 60%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        text-align: left;
+        cursor: pointer;
+
+        p {
+          position: absolute;
+          bottom: 20px;
+          left: 15px;
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          color: #ffffff;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.fleet {
+  background-color: #fcfeff;
+
+  .fleet-carousel {
+    margin: 40px 0 20px 0;
+  }
+
+  .item {
+    margin: 0 30px;
+  }
+
+  &__content {
+    width: 100%;
+    height: auto;
+
+    .card {
+      border: none;
+      outline: none;
+      padding-top: 40px;
+      border-radius: 10px;
+
+      img {
+        width: 90% !important;
+        height: auto;
+        margin: 0 auto;
+      }
+
+      .card-body {
+        padding: 40px 25px;
+        background-color: #fefefe;
+        text-align: center;
+
+        h5 {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 174.69%;
+          color: #000000;
+          text-align: center;
+        }
+
+        a {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 174.69%;
+          text-decoration-line: underline;
+          color: #89969f;
+        }
+      }
+
+      &:hover {
+        // border: 1px solid #a0a0a0;
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+
+  // owl dot
+  .owl-dots {
+    margin-top: 30px;
+    text-align: center;
+
+    button {
+      display: inline-block;
+      margin: 0 10px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #ddd !important;
+
+      &:focus {
+        outline: none;
+        border: 0;
+      }
+    }
+
+    .active {
+      background-color: #004077 !important;
+      box-shadow: 0px 0px 0px 10px rgba(190, 205, 222, 0.75);
+    }
+  }
+}
+
+.app {
+  background-color: #fcfeff;
+  &_background {
+    background: url("../../img/app-bg.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    box-shadow: $box-shadow;
+  }
+
+  &__download {
+    img {
+      padding-right: 20px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 60px;
+
+    h1 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 30px;
+      letter-spacing: 0.055em;
+      color: #ffffff;
+      padding-bottom: 25px;
+    }
+
+    p {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 27px;
+      letter-spacing: 0.035em;
+      color: rgba(255, 255, 255, 0.5);
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-4rem);
+  }
+}
+
+.subscribe {
+  background-color: #fcfeff;
+  position: relative;
+
+  &__background {
+    background-color: #fff;
+    box-shadow: $box-shadow;
+    padding: 5rem 0;
+  }
+
+  &__box {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+
+    img {
+      padding-bottom: 30px;
+    }
+
+    p {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 203.5%;
+      text-align: center;
+      color: #89969f;
+      padding: 10px 0;
+    }
+  }
+
+  &__input {
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      input {
+        margin-right: 3rem;
+        padding: 10px 20px;
+        background: #ffffff;
+        border: 1px solid #e6e6e6;
+        border-radius: 10px;
+        outline: none;
+
+        &::placeholder {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 24px;
+          color: #898989;
+        }
+
+        &:focus {
+          outline: none;
+          border: 1px solid #e6e6e6;
+        }
+      }
+
+      button {
+        padding: 10px 35px;
+        background: linear-gradient(84.89deg, #004077 -68.22%, #0077cc 132.22%);
+        border-radius: 10px;
+        color: #fff;
+        border: none;
+        outline: none;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 0.025em;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

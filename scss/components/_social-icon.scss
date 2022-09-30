@@ -1,0 +1,39 @@
+.social-icon {
+    &__list {
+        list-style: none;
+        display: flex;
+    }
+    
+    &__item {
+        width: 3.3rem;
+        height: 3.3rem;
+        border-radius: 50%;        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: .7rem;
+        transition: all .2s;
+        
+        &:hover {
+            transform: translateY(-1px) scale(1.07);
+        }
+    }
+
+    &__link:link,
+    &__link:visited,
+    &__link:hover,
+    &__link:active {
+        text-decoration: none;
+    }
+
+    &__icon {
+        font-size: 1.6rem;
+    }
+
+    &__primary &__item {
+        background-color: $color-primary;
+    }
+
+    &__primary &__icon {
+        color: $color-white;
+    }
+}

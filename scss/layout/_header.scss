@@ -1,0 +1,184 @@
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba($color-black, 0.6),
+      rgba($color-black, 0.6)
+    ),
+    url("../img/header-background.jpg");
+  background-position: 50% 53%;
+  background-size: cover;
+  position: relative;
+
+  .header__main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &--column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .header__heading--box {
+        h1 {
+          font-family: "Outfit";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 48px;
+          line-height: 171.98%;
+          color: #ffffff;
+        }
+
+        p {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 200%;
+          color: #cdcdcd;
+        }
+      }
+
+      .testimonials {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+
+        &__item {
+          background: rgba(255, 255, 255, 0.144);
+          backdrop-filter: blur(9.66px);
+          border-radius: 9.44186px;
+          padding: 15px;
+          margin: 15px;
+          display: flex;
+          align-items: center;
+
+          &--img {
+            width: 100%;
+            height: auto;
+          }
+
+          h2 {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14.1628px;
+            line-height: 120%;
+            color: #ffffff;
+          }
+
+          i {
+            width: 9px;
+            height: 9px;
+            font-size: 11px;
+            line-height: 11px;
+            color: #ffc833;
+            margin: 0 2px;
+          }
+
+          span {
+            padding-left: 10px;
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 174.69%;
+            letter-spacing: -0.025em;
+            text-transform: capitalize;
+            color: #676767;
+          }
+
+          p {
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 189.5%;
+            letter-spacing: 0.590116px;
+            color: #9098b1;
+            padding-top: 10px;
+          }
+        }
+      }
+
+      .form__container {
+        // min-width: 100%;
+        width: 400px;
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #febb02;
+        border-radius: 10px;
+
+        .form__heading {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          h1 {
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            text-transform: capitalize;
+            color: #ffffff;
+            border-bottom: 2px solid #fff;
+          }
+
+          h2 {
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #ffffff;
+          }
+        }
+
+        .form__inputs {
+          width: 100%;
+          form {
+            width: 100%;
+            input {
+              background: #ffffff;
+              border-radius: 5px;
+              width: 100%;
+              margin: 10px 0;
+              border: 0;
+              outline: 0;
+              padding: 10px 20px;
+
+              &::placeholder {
+                font-family: "Lato";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+                /* identical to box height, or 168% */
+
+                color: #898989;
+              }
+            }
+
+            button {
+              margin-top: 20px;
+              padding: 10px 15px;
+              width: 100%;
+              background: linear-gradient(
+                84deg,
+                #004077 -71.2%,
+                #0077cc 124.92%
+              );
+              border-radius: 5px;
+              color: #fff;
+              border: none;
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

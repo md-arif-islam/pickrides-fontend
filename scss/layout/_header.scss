@@ -1,5 +1,6 @@
 .header {
   height: 100vh;
+  padding: 1rem 0;
   background-image: linear-gradient(
       rgba($color-black, 0.6),
       rgba($color-black, 0.6)
@@ -179,6 +180,99 @@
           }
         }
       }
+    }
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media only screen and (max-width: 575.98px) {
+}
+
+// Medium devices (tablets, less than 992px)
+@media only screen and (max-width: 991.98px) {
+}
+
+// Large devices (desktops, less than 1200px)
+@media only screen and (max-width: 1199.98px) {
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@media only screen and (max-width: 1399.98px) {
+  .header {
+    height: auto;
+
+    .header__main {
+      padding: 3rem 0;
+      &--column {
+        .header__heading--box {
+          h1 {
+            font-size: 36px;
+            line-height: 1.2;
+          }
+          p {
+            font-size: 16px;
+            line-height: 120%;
+          }
+        }
+
+        .testimonials {
+          &__item {
+            padding: 10px;
+            margin: 10px;
+
+            h2 {
+              line-height: 100%;
+            }
+
+            p {
+              padding-top: 5px;
+            }
+          }
+        }
+
+        .form__container {
+          width: 100%;
+          padding: 15px;
+
+          .form__heading {
+            h1 {
+              font-size: 16px;
+              line-height: 20px;
+            }
+          }
+
+          .form__inputs {
+            form {
+              input {
+                margin: 5px 0;
+                padding: 5px 20px;
+
+                &::placeholder {
+                  font-weight: 500;
+                  font-size: 14px;
+                  line-height: 20px;
+                }
+              }
+
+              button {
+                margin-top: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media only screen and (max-width: 767.98px) {
+  .header {
+    height: auto;
+    padding: 10px 20px;
+
+    .header__main {
+      padding: 5rem 0;
     }
   }
 }

@@ -10,5 +10,5 @@
 // Large devices (desktops, less than 1200px)
 @media only screen and (max-width: 1199.98px) {  }
 
-// Extra large devices (large desktops)
+// Extra large devices (large desktops)\
 // No media query since the extra-large breakpoint has no upper bound on its width

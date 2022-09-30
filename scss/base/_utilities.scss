@@ -1,3 +1,17 @@
 section {
   padding: 120px 0;
 }
+
+// Extra small devices (portrait phones, less than 576px)
+@media only screen and (max-width: 575.98px) {
+  section {
+    padding: 50px 20px;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media only screen and (max-width: 767.98px) {
+  section {
+    padding: 80px 0px;
+  }
+}

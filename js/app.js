@@ -1,6 +1,8 @@
 $(document).ready(function () {
   // Waypoints
   //////////////////////////////////////////
+  var logo_src = $(".logo__img img").attr("data-sticky");
+
   $(".js__navigation").waypoint(
     function (direction) {
       if (direction == "down") {
@@ -30,6 +32,23 @@ $(document).ready(function () {
       },
       900: {
         items: 3,
+      },
+    },
+  });
+
+  $(".testimonial-carousel").owlCarousel({
+    autoplay: true,
+    nav: true,
+    loop: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+      900: {
+        items: 2,
       },
     },
   });

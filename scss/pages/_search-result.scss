@@ -567,7 +567,6 @@
     margin-top: 30px;
 
     button {
-      padding: 0 20px;
       background-color: #cadeee;
       margin: 0 20px;
       width: 40px;
@@ -585,6 +584,13 @@
         span {
           color: #fff;
         }
+      }
+
+      &:nth-child(1) {
+        padding: 0 10px !important;
+      }
+      &:nth-child(2) {
+        padding: 0 17px !important;
       }
     }
   }

@@ -55,9 +55,9 @@ $(document).ready(function () {
 
   // isotop
   //////////////////////////////
-  let $btns = $(".projects__contant__button__group li");
+  let $projectBtns = $(".projects__contant__button__group li");
 
-  $btns.click(function (e) {
+  $projectBtns.click(function (e) {
     $(".projects__contant__button__group li").removeClass("active");
     e.target.classList.add("active");
 
@@ -70,4 +70,32 @@ $(document).ready(function () {
   });
 
   $(".projects__contant__button__group #btn1").trigger("click");
+
+  let $resultBtns = $(".results__contant__button__group li");
+  $resultBtns.click(function (e) {
+    $(".results__contant__button__group li").removeClass("active");
+    e.target.classList.add("active");
+
+    let selector = $(e.target).attr("data-filter");
+    $(".results__contant .grid").isotope({
+      filter: selector,
+    });
+
+    return false;
+  });
+
+  $(".results__contant__button__group #btn1").trigger("click");
+
+  let $extraBtns = $(".extra__contant__button__group li");
+  $extraBtns.click(function (e) {
+    $(".extra__contant__button__group li").removeClass("active");
+    e.target.classList.add("active");
+
+    let selector = $(e.target).attr("data-filter");
+    $(".extra__contant .grid").isotope({
+      filter: selector,
+    });
+
+    return false;
+  });
 });

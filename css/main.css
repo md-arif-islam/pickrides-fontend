@@ -127,7 +127,7 @@ section {
   color: #000000;
 }
 .footer__logo {
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
 }
 .footer__bankingsimgs {
   display: inline-block;
@@ -183,6 +183,7 @@ section {
   flex-direction: row;
   justify-content: start;
   align-items: center;
+  padding-top: 1rem;
 }
 .footer__icons h5 {
   font-family: "Lato";
@@ -241,6 +242,9 @@ section {
 @media only screen and (max-width: 767.98px) {
   .footer {
     padding: 80px 0 30px 0;
+  }
+  .footer__left {
+    margin-bottom: 40px;
   }
 }
 @media only screen and (max-width: 575.98px) {
@@ -343,7 +347,8 @@ section {
 .header .header__main--column .form__container {
   width: 400px;
   max-width: 400px;
-  margin: 20px auto;
+  margin: 20px;
+  float: right;
   padding: 20px;
   background: #febb02;
   border-radius: 10px;
@@ -707,7 +712,7 @@ section {
 }
 #transfer .transfer__cards .transfer__card {
   margin: 35px;
-  padding: 15px;
+  padding: 25px;
   text-align: center;
   background-color: #fff;
   box-shadow: 0px 11.2941px 14.1176px #f1f4f9;
@@ -730,7 +735,7 @@ section {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 29px;
   display: flex;
   align-items: center;
@@ -762,7 +767,7 @@ section {
   font-family: "Lato";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 34px;
   letter-spacing: 0.035em;
   color: #a0a0a0;
@@ -943,11 +948,12 @@ section {
   font-family: "Lato";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 27px;
   letter-spacing: 0.035em;
   color: rgba(255, 255, 255, 0.5);
   padding-bottom: 2rem;
+  width: 65%;
 }
 .app__img {
   display: flex;
@@ -1000,7 +1006,7 @@ section {
   font-family: "Lato";
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
   color: #898989;
 }
@@ -1008,7 +1014,7 @@ section {
   font-family: "Lato";
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
   color: #898989;
 }
@@ -1016,7 +1022,7 @@ section {
   font-family: "Lato";
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
   color: #898989;
 }
@@ -1034,7 +1040,7 @@ section {
   font-family: "Lato";
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 17px;
   text-align: center;
   letter-spacing: 0.025em;
@@ -1088,7 +1094,7 @@ section {
     font-family: "Lato";
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 27px;
     letter-spacing: 0.035em;
     color: rgba(255, 255, 255, 0.5);
@@ -1616,7 +1622,6 @@ section {
   margin-top: 30px;
 }
 .testimonial .owl-carousel .owl-nav button {
-  padding: 0 20px;
   background-color: #cadeee;
   margin: 0 20px;
   width: 40px;
@@ -1633,6 +1638,12 @@ section {
 }
 .testimonial .owl-carousel .owl-nav button:hover span {
   color: #fff;
+}
+.testimonial .owl-carousel .owl-nav button:nth-child(1) {
+  padding: 0 10px !important;
+}
+.testimonial .owl-carousel .owl-nav button:nth-child(2) {
+  padding: 0 17px !important;
 }
 
 @media only screen and (max-width: 991.98px) {
@@ -1817,6 +1828,111 @@ section {
   color: #596771;
 }
 
+.pdetails {
+  background-color: #fcfeff;
+}
+.pdetails .section__title {
+  text-align: left;
+  float: left;
+  padding-bottom: 20px;
+}
+.pdetails .section__title h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 29px;
+  /* identical to box height, or 80% */
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.pdetails__box {
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
+  padding-right: 10%;
+}
+.pdetails__box--inputs {
+  padding: 1rem 2rem;
+}
+.pdetails__box--inputs input {
+  margin: 5px 0;
+  background: #ffffff;
+  border: 1.5px solid #fdb417;
+  border-radius: 10px;
+  background: #ffffff;
+  width: 100%;
+  outline: 0;
+  padding: 10px 20px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.pdetails__box--inputs input::-moz-placeholder {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #596771;
+}
+.pdetails__box--inputs input:-ms-input-placeholder {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #596771;
+}
+.pdetails__box--inputs input::placeholder {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #596771;
+}
+.pdetails__box--inputs input:focus {
+  background: #fdb417;
+  color: #fff;
+}
+.pdetails__box--inputs input:focus::-moz-placeholder {
+  color: #fff;
+}
+.pdetails__box--inputs input:focus:-ms-input-placeholder {
+  color: #fff;
+}
+.pdetails__box--inputs input:focus::placeholder {
+  color: #fff;
+}
+.pdetails__box--inputs button {
+  margin: 0 20px;
+  padding: 15px 45px;
+  background: linear-gradient(84.89deg, #004077 -68.22%, #0077cc 132.22%);
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.pdetails__box--inputs p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 23px;
+  color: #596771;
+}
+
 .summary {
   background-color: #fcfeff;
 }
@@ -1861,51 +1977,57 @@ section {
   justify-content: space-between;
 }
 .summary__box--first .summary__box--inputs input {
-  margin: 1rem 0;
+  margin: 5px 0;
+  background: #ffffff;
   border: 1.5px solid #fdb417;
   border-radius: 10px;
+  background: #ffffff;
   width: 100%;
   outline: 0;
   padding: 10px 20px;
-  background: linear-gradient(42.47deg, #fdb417 -9.96%, #fec751 103.44%);
-  box-shadow: 0px 1.14966px 2.29932px rgba(16, 24, 40, 0.05);
-  color: #ffffff;
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
-  font-size: 18.3945px;
-  line-height: 28px;
-  color: #ffffff;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
 }
 .summary__box--first .summary__box--inputs input::-moz-placeholder {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
-  font-size: 18.3945px;
-  line-height: 28px;
-  /* identical to box height, or 150% */
-  /* main color/white */
-  color: #ffffff;
+  font-size: 18px;
+  line-height: 22px;
+  color: #596771;
 }
 .summary__box--first .summary__box--inputs input:-ms-input-placeholder {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
-  font-size: 18.3945px;
-  line-height: 28px;
-  /* identical to box height, or 150% */
-  /* main color/white */
-  color: #ffffff;
+  font-size: 18px;
+  line-height: 22px;
+  color: #596771;
 }
 .summary__box--first .summary__box--inputs input::placeholder {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
-  font-size: 18.3945px;
-  line-height: 28px;
-  /* identical to box height, or 150% */
-  /* main color/white */
-  color: #ffffff;
+  font-size: 18px;
+  line-height: 22px;
+  color: #596771;
+}
+.summary__box--first .summary__box--inputs input:focus {
+  background: #fdb417;
+  color: #fff;
+}
+.summary__box--first .summary__box--inputs input:focus::-moz-placeholder {
+  color: #fff;
+}
+.summary__box--first .summary__box--inputs input:focus:-ms-input-placeholder {
+  color: #fff;
+}
+.summary__box--first .summary__box--inputs input:focus::placeholder {
+  color: #fff;
 }
 .summary__box--first .summary__box--inputs button {
   margin: 0 20px;
@@ -2084,7 +2206,7 @@ section {
   color: #344054;
 }
 .payment__box--second .item input {
-  margin: 1rem 0;
+  margin: 5px 0;
   background: #ffffff;
   border: 1.5px solid #fdb417;
   border-radius: 10px;
@@ -2105,7 +2227,7 @@ section {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: #000000;
+  color: #596771;
 }
 .payment__box--second .item input:-ms-input-placeholder {
   font-family: "Lato";
@@ -2113,7 +2235,7 @@ section {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: #000000;
+  color: #596771;
 }
 .payment__box--second .item input::placeholder {
   font-family: "Lato";
@@ -2121,7 +2243,20 @@ section {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: #000000;
+  color: #596771;
+}
+.payment__box--second .item input:focus {
+  background: #fdb417;
+  color: #fff;
+}
+.payment__box--second .item input:focus::-moz-placeholder {
+  color: #fff;
+}
+.payment__box--second .item input:focus:-ms-input-placeholder {
+  color: #fff;
+}
+.payment__box--second .item input:focus::placeholder {
+  color: #fff;
 }
 .payment__box--second .item p {
   font-family: "Lato";

@@ -2680,6 +2680,27 @@ section {
 }
 
 @media only screen and (max-width: 575.98px) {
+  .pdetails {
+    background-color: #fcfeff;
+  }
+  .pdetails .section__title {
+    text-align: left;
+    float: left;
+    padding-bottom: 20px;
+  }
+  .pdetails .section__title h1 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 29px;
+    /* identical to box height, or 80% */
+    letter-spacing: -0.02em;
+    color: #000000;
+  }
+  .pdetails__box {
+    padding: 10px;
+  }
   .summary__box {
     padding: 10px;
     border-radius: 10px;

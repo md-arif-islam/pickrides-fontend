@@ -1,14 +1,17 @@
 $(document).ready(function () {
   // Waypoints
   //////////////////////////////////////////
-  var logo_src = $(".logo__img img").attr("data-sticky");
+  var whiteLogo = $(".logo__img img").attr("data-whiteLogo");
+  var greenLogo = $(".logo__img img").attr("data-greenLogo");
 
   $(".js__navigation").waypoint(
     function (direction) {
       if (direction == "down") {
         $(".js__navigation").addClass("navigation__sticky");
+        $(".logo__img img").attr("src", greenLogo);
       } else {
         $(".js__navigation").removeClass("navigation__sticky");
+        $(".logo__img img").attr("src", whiteLogo);
       }
     },
     {

@@ -178,6 +178,43 @@
               border: none;
               outline: none;
             }
+
+            .form__select {
+              // background: #ffffff;
+              border-radius: 5px;
+              width: 100%;
+              margin: 10px 0;
+              border: 0;
+              outline: 0;
+              padding: 7px 16px;
+
+              font-family: "Lato";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 24px;
+              /* identical to box height, or 168% */
+
+              // color: #898989;
+            }
+
+            #form-date,
+            #form-time,
+            #form-date-return,
+            #form-time-return {
+              position: relative;
+
+              .input-button {
+                position: absolute;
+                top: 50%;
+                right: 15px;
+                transform: translateY(-50%);
+
+                i {
+                  color: #dadada;
+                }
+              }
+            }
           }
         }
       }

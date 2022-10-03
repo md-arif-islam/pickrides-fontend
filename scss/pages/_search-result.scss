@@ -1,6 +1,5 @@
 .rinputs {
   background-color: #fcfeff;
-  padding: 60px 0;
 
   &__box {
     background: #fdb417;
@@ -47,7 +46,6 @@
 
 .progressbar {
   background-color: #fcfeff;
-  padding: 60px 0;
 
   &__box {
     display: flex;
@@ -434,7 +432,6 @@
 
 .testimonial {
   background-color: #fcfeff;
-  padding: 3rem 0;
 
   &__text {
     h5 {
@@ -596,12 +593,80 @@
   }
 }
 
-// Extra small devices (portrait phones, less than 576px)
-@media only screen and (max-width: 575.98px) {
+// X-Large devices (large desktops, less than 1400px)
+@media only screen and (max-width: 1399.98px) {
+  .testimonial {
+    &__text {
+      h1 {
+        font-size: 36px;
+        line-height: 42px;
+      }
+    }
+
+    .testimonial__content h2 {
+      font-size: 14px;
+      line-height: 150%;
+    }
+    i {
+      font-size: 12px;
+      line-height: 12px;
+    }
+
+    span {
+      font-size: 13px;
+      line-height: 150%;
+    }
+
+    h6 {
+      font-family: "Lato";
+      font-style: normal;
+      padding-top: 10px;
+      font-weight: 500;
+      font-size: 11.8023px;
+      line-height: 174.69%;
+      /* identical to box height, or 21px */
+
+      letter-spacing: -0.025em;
+      text-transform: capitalize;
+
+      color: #000000;
+
+      i {
+        padding-right: 8px;
+        font-size: 11px;
+        line-height: 11px;
+        color: #dadada;
+        margin: 0 2px;
+      }
+    }
+
+    h2 {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 180%;
+      letter-spacing: 0.590116px;
+      color: #000000;
+    }
+
+    p {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 189.5%;
+      /* or 23px */
+
+      letter-spacing: 0.590116px;
+
+      color: #9098b1;
+    }
+  }
 }
 
-// Small devices (landscape phones, less than 768px)
-@media only screen and (max-width: 767.98px) {
+// Large devices (desktops, less than 1200px)
+@media only screen and (max-width: 1199.98px) {
 }
 
 // Medium devices (tablets, less than 992px)
@@ -617,20 +682,146 @@
   }
 }
 
-// Large devices (desktops, less than 1200px)
-@media only screen and (max-width: 1199.98px) {
+// Small devices (landscape phones, less than 768px)
+@media only screen and (max-width: 767.98px) {
 }
 
-// X-Large devices (large desktops, less than 1400px)
-@media only screen and (max-width: 1399.98px) {
+// Extra small devices (portrait phones, less than 576px)
+@media only screen and (max-width: 575.98px) {
   .testimonial {
-    background-color: #fcfeff;
-    padding: 3rem 0;
-
     &__text {
       h1 {
-        font-size: 40px;
-        line-height: 52px;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0;
+      }
+    }
+
+    .testimonial__item {
+      box-shadow: 0 0 10px 0 #ccc;
+    }
+  }
+
+  .testimonial-carousel {
+    background-color: transparent;
+    padding: 2rem 2rem 0 2rem;
+    display: flex;
+  }
+
+  .rinputs {
+    background-color: #fcfeff;
+
+    &__box {
+      background: #fdb417;
+      padding: 1rem;
+      border-radius: 20px;
+    }
+  }
+
+  .progressbar__box--item {
+    padding: 1rem 0;
+  }
+
+  .results__item--first {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    .results__item--left {
+      padding-bottom: 1rem;
+    }
+
+    .results__item--right {
+      text-align: center;
+      h3 {
+        font-size: 18px;
+        line-height: 24px;
+        &.price {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
+  .results__item--second {
+    .item {
+      text-align: center;
+    }
+    h5 {
+      display: block;
+      align-items: center;
+    }
+  }
+
+  .results__item--third {
+    display: block;
+    float: unset;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .results__contant__button {
+    margin-bottom: 1rem;
+  }
+
+  .note {
+    .section__title {
+      h1 {
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0;
+      }
+    }
+
+    &__box {
+      &--first {
+        padding: 1.5rem;
+        margin: 0.5rem;
+
+        h2 {
+          font-size: 24px;
+          line-height: 30px;
+          display: block;
+        }
+        p {
+          line-height: 20px;
+          display: block;
+        }
+      }
+
+      &--second {
+        padding: 0 1rem;
+        margin: 1rem 0.5rem;
+        h4 {
+          font-size: 16px;
+          line-height: 150%;
+          display: block;
+        }
+      }
+
+      &--third {
+        padding: 1rem;
+        margin: 2rem 2.5rem;
+
+        border-radius: 10px;
+        text-align: center;
+
+        p {
+          padding-top: 10px;
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 150%;
+          /* or 33px */
+
+          display: block;
+          align-items: center;
+          text-align: center;
+
+          color: #000000;
+        }
       }
     }
   }

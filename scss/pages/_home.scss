@@ -360,6 +360,7 @@
   }
 
   &__input {
+    width: 80%;
     form {
       width: 100%;
       display: flex;
@@ -371,7 +372,7 @@
         border: 1px solid #e6e6e6;
         border-radius: 10px;
         outline: none;
-        width: 70%;
+        width: 100%;
 
         &::placeholder {
           font-family: "Lato";
@@ -408,8 +409,171 @@
   }
 }
 
+// X-Large devices (large desktops, less than 1400px)
+@media only screen and (max-width: 1399.98px) {
+  #transfer {
+    .transfer__cards {
+      .transfer__card {
+        margin: 15px;
+        text-align: center;
+        p {
+          text-align: left !important;
+        }
+      }
+    }
+
+    .transfer__title {
+      padding: 50px 50px 20px 50px;
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media only screen and (max-width: 1199.98px) {
+}
+
+// Medium devices (tablets, less than 992px)
+@media only screen and (max-width: 991.98px) {
+  #transfer {
+    .transfer__cards {
+      .transfer__card {
+        &.custom__scale {
+          transform: translateY(0px);
+        }
+      }
+    }
+  }
+
+  .app {
+    background-color: #fcfeff;
+    &_background {
+      padding: 3rem 0;
+    }
+
+    &__img {
+      display: flex;
+      justify-content: center;
+      transform: translateY(0);
+    }
+
+    &__text {
+      padding: 20px 30px;
+
+      p {
+        width: 85%;
+      }
+    }
+
+    &__download {
+      display: flex;
+      font-display: row;
+      img {
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media only screen and (max-width: 767.98px) {
+  .header .header__main--column .form__container {
+    margin: 20px 0;
+  }
+
+  #transfer .transfer__cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__cards {
+    text-align: center;
+  }
+
+  .app {
+    &_background {
+      padding: 3rem 0;
+    }
+
+    &__text {
+      padding: 20px 30px;
+
+      p {
+        width: 85%;
+      }
+    }
+
+    &__img {
+      padding: 2rem 0;
+      display: flex;
+      justify-content: center;
+      transform: translateY(0rem);
+    }
+  }
+
+  #transfer .transfer__title {
+    padding: 50px 20px 20px 20px;
+
+    h1 {
+      font-size: 28px;
+      line-height: 30px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
 // Extra small devices (portrait phones, less than 576px)
 @media only screen and (max-width: 575.98px) {
+  .fleet {
+    .item {
+      margin: 0 10px;
+    }
+
+    .fleet__content .card .card-body {
+      padding: 40px 15px;
+    }
+
+    // owl dot
+    .owl-dots {
+      margin-top: 15px;
+
+      button {
+        display: inline-block;
+        margin: 0 10px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ddd !important;
+
+        &:focus {
+          outline: none;
+          border: 0;
+        }
+      }
+
+      .active {
+        background-color: #004077 !important;
+        box-shadow: 0px 0px 0px 7px rgba(190, 205, 222, 0.75);
+      }
+    }
+  }
+
+  .projects {
+    &__contant {
+      &__button {
+        &__group {
+          margin: 10px 0;
+          list-style: none;
+          padding: 0;
+
+          li {
+            padding: 10px;
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
   .subscribe {
     &__background {
       padding: 3rem 0;
@@ -435,73 +599,6 @@
           margin-top: 10px;
           padding: 10px 15px;
         }
-      }
-    }
-  }
-}
-
-// Small devices (landscape phones, less than 768px)
-@media only screen and (max-width: 767.98px) {
-  .about__cards {
-    text-align: center;
-  }
-
-  .app {
-    &_background {
-      padding: 3rem 0;
-    }
-
-    &__text {
-      display: flex;
-      flex-direction: column;
-      padding: 20px 60px;
-
-      h1 {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 30px;
-        letter-spacing: 0.055em;
-        color: #ffffff;
-        padding-bottom: 25px;
-      }
-
-      p {
-        font-family: "Lato";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 27px;
-        letter-spacing: 0.035em;
-        color: rgba(255, 255, 255, 0.5);
-        padding-bottom: 2rem;
-      }
-    }
-
-    &__img {
-      padding: 2rem 0;
-      display: flex;
-      justify-content: center;
-      transform: translateY(0rem);
-    }
-  }
-}
-
-// Medium devices (tablets, less than 992px)
-@media only screen and (max-width: 991.98px) {
-}
-
-// Large devices (desktops, less than 1200px)
-@media only screen and (max-width: 1199.98px) {
-}
-
-// X-Large devices (large desktops, less than 1400px)
-@media only screen and (max-width: 1399.98px) {
-  #transfer {
-    .transfer__cards {
-      .transfer__card {
-        margin: 15px;
       }
     }
   }

@@ -166,5 +166,9 @@
 @media only screen and (max-width: 575.98px) {
   .footer {
     padding: 50px 20px 30px 20px;
+    &__left,
+    &__right {
+      padding: 0 1rem;
+    }
   }
 }

@@ -46,7 +46,7 @@ a:hover {
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
-  line-height: 30px;
+  line-height: 40px;
   letter-spacing: -0.005em;
   color: #000000;
   padding-bottom: 15px;
@@ -62,18 +62,43 @@ a:hover {
   color: #a0a0a0;
 }
 
-section {
-  padding: 120px 0;
-}
-
 @media only screen and (max-width: 575.98px) {
   section {
     padding: 50px 20px;
   }
 }
 @media only screen and (max-width: 767.98px) {
+  .section__title .s-title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .section__title .s-desc {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media only screen and (max-width: 991.98px) {
   section {
     padding: 80px 0px;
+  }
+}
+section {
+  padding: 120px 0;
+}
+
+@media only screen and (max-width: 991.98px) {
+  section {
+    padding: 80px 0px;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  section {
+    padding: 70px 0px;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  section {
+    padding: 50px 20px;
   }
 }
 .social-icon__list {
@@ -251,6 +276,9 @@ section {
   .footer {
     padding: 50px 20px 30px 20px;
   }
+  .footer__left, .footer__right {
+    padding: 0 1rem;
+  }
 }
 .header {
   height: 100vh;
@@ -427,6 +455,41 @@ section {
   color: #fff;
   border: none;
   outline: none;
+}
+.header .header__main--column .form__container .form__inputs form .form__select {
+  border-radius: 5px;
+  width: 100%;
+  margin: 10px 0;
+  border: 0;
+  outline: 0;
+  padding: 7px 16px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 168% */
+}
+.header .header__main--column .form__container .form__inputs form #form-date,
+.header .header__main--column .form__container .form__inputs form #form-time,
+.header .header__main--column .form__container .form__inputs form #form-date-return,
+.header .header__main--column .form__container .form__inputs form #form-time-return {
+  position: relative;
+}
+.header .header__main--column .form__container .form__inputs form #form-date .input-button,
+.header .header__main--column .form__container .form__inputs form #form-time .input-button,
+.header .header__main--column .form__container .form__inputs form #form-date-return .input-button,
+.header .header__main--column .form__container .form__inputs form #form-time-return .input-button {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+.header .header__main--column .form__container .form__inputs form #form-date .input-button i,
+.header .header__main--column .form__container .form__inputs form #form-time .input-button i,
+.header .header__main--column .form__container .form__inputs form #form-date-return .input-button i,
+.header .header__main--column .form__container .form__inputs form #form-time-return .input-button i {
+  color: #dadada;
 }
 
 @media only screen and (max-width: 1399.98px) {
@@ -988,6 +1051,9 @@ section {
   color: #89969f;
   padding: 10px 0;
 }
+.subscribe__input {
+  width: 80%;
+}
 .subscribe__input form {
   width: 100%;
   display: flex;
@@ -1000,7 +1066,7 @@ section {
   border: 1px solid #e6e6e6;
   border-radius: 10px;
   outline: none;
-  width: 70%;
+  width: 100%;
 }
 .subscribe__input form input::-moz-placeholder {
   font-family: "Lato";
@@ -1047,7 +1113,118 @@ section {
   text-transform: capitalize;
 }
 
+@media only screen and (max-width: 1399.98px) {
+  #transfer .transfer__cards .transfer__card {
+    margin: 15px;
+    text-align: center;
+  }
+  #transfer .transfer__cards .transfer__card p {
+    text-align: left !important;
+  }
+  #transfer .transfer__title {
+    padding: 50px 50px 20px 50px;
+  }
+}
+@media only screen and (max-width: 991.98px) {
+  #transfer .transfer__cards .transfer__card.custom__scale {
+    transform: translateY(0px);
+  }
+  .app {
+    background-color: #fcfeff;
+  }
+  .app_background {
+    padding: 3rem 0;
+  }
+  .app__img {
+    display: flex;
+    justify-content: center;
+    transform: translateY(0);
+  }
+  .app__text {
+    padding: 20px 30px;
+  }
+  .app__text p {
+    width: 85%;
+  }
+  .app__download {
+    display: flex;
+    font-display: row;
+  }
+  .app__download img {
+    padding-right: 20px;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .header .header__main--column .form__container {
+    margin: 20px 0;
+  }
+  #transfer .transfer__cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__cards {
+    text-align: center;
+  }
+  .app_background {
+    padding: 3rem 0;
+  }
+  .app__text {
+    padding: 20px 30px;
+  }
+  .app__text p {
+    width: 85%;
+  }
+  .app__img {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    transform: translateY(0rem);
+  }
+  #transfer .transfer__title {
+    padding: 50px 20px 20px 20px;
+  }
+  #transfer .transfer__title h1 {
+    font-size: 28px;
+    line-height: 30px;
+    padding-bottom: 20px;
+  }
+}
 @media only screen and (max-width: 575.98px) {
+  .fleet .item {
+    margin: 0 10px;
+  }
+  .fleet .fleet__content .card .card-body {
+    padding: 40px 15px;
+  }
+  .fleet .owl-dots {
+    margin-top: 15px;
+  }
+  .fleet .owl-dots button {
+    display: inline-block;
+    margin: 0 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd !important;
+  }
+  .fleet .owl-dots button:focus {
+    outline: none;
+    border: 0;
+  }
+  .fleet .owl-dots .active {
+    background-color: #004077 !important;
+    box-shadow: 0px 0px 0px 7px rgba(190, 205, 222, 0.75);
+  }
+  .projects__contant__button__group {
+    margin: 10px 0;
+    list-style: none;
+    padding: 0;
+  }
+  .projects__contant__button__group li {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 20px;
+  }
   .subscribe__background {
     padding: 3rem 0;
   }
@@ -1068,53 +1245,8 @@ section {
     padding: 10px 15px;
   }
 }
-@media only screen and (max-width: 767.98px) {
-  .about__cards {
-    text-align: center;
-  }
-  .app_background {
-    padding: 3rem 0;
-  }
-  .app__text {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 60px;
-  }
-  .app__text h1 {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 30px;
-    letter-spacing: 0.055em;
-    color: #ffffff;
-    padding-bottom: 25px;
-  }
-  .app__text p {
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 27px;
-    letter-spacing: 0.035em;
-    color: rgba(255, 255, 255, 0.5);
-    padding-bottom: 2rem;
-  }
-  .app__img {
-    padding: 2rem 0;
-    display: flex;
-    justify-content: center;
-    transform: translateY(0rem);
-  }
-}
-@media only screen and (max-width: 1399.98px) {
-  #transfer .transfer__cards .transfer__card {
-    margin: 15px;
-  }
-}
 .rinputs {
   background-color: #fcfeff;
-  padding: 60px 0;
 }
 .rinputs__box {
   background: #fdb417;
@@ -1172,7 +1304,6 @@ section {
 
 .progressbar {
   background-color: #fcfeff;
-  padding: 60px 0;
 }
 .progressbar__box {
   display: flex;
@@ -1509,7 +1640,6 @@ section {
 
 .testimonial {
   background-color: #fcfeff;
-  padding: 3rem 0;
 }
 .testimonial__text h5 {
   font-family: "Roboto";
@@ -1646,6 +1776,62 @@ section {
   padding: 0 17px !important;
 }
 
+@media only screen and (max-width: 1399.98px) {
+  .testimonial__text h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .testimonial .testimonial__content h2 {
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .testimonial i {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .testimonial span {
+    font-size: 13px;
+    line-height: 150%;
+  }
+  .testimonial h6 {
+    font-family: "Lato";
+    font-style: normal;
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 11.8023px;
+    line-height: 174.69%;
+    /* identical to box height, or 21px */
+    letter-spacing: -0.025em;
+    text-transform: capitalize;
+    color: #000000;
+  }
+  .testimonial h6 i {
+    padding-right: 8px;
+    font-size: 11px;
+    line-height: 11px;
+    color: #dadada;
+    margin: 0 2px;
+  }
+  .testimonial h2 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 180%;
+    letter-spacing: 0.590116px;
+    color: #000000;
+  }
+  .testimonial p {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 189.5%;
+    /* or 23px */
+    letter-spacing: 0.590116px;
+    color: #9098b1;
+  }
+}
 @media only screen and (max-width: 991.98px) {
   .testimonial__text {
     padding-bottom: 2rem;
@@ -1655,14 +1841,111 @@ section {
     line-height: 52px;
   }
 }
-@media only screen and (max-width: 1399.98px) {
-  .testimonial {
-    background-color: #fcfeff;
-    padding: 3rem 0;
-  }
+@media only screen and (max-width: 575.98px) {
   .testimonial__text h1 {
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0;
+  }
+  .testimonial .testimonial__item {
+    box-shadow: 0 0 10px 0 #ccc;
+  }
+  .testimonial-carousel {
+    background-color: transparent;
+    padding: 2rem 2rem 0 2rem;
+    display: flex;
+  }
+  .rinputs {
+    background-color: #fcfeff;
+  }
+  .rinputs__box {
+    background: #fdb417;
+    padding: 1rem;
+    border-radius: 20px;
+  }
+  .progressbar__box--item {
+    padding: 1rem 0;
+  }
+  .results__item--first {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .results__item--first .results__item--left {
+    padding-bottom: 1rem;
+  }
+  .results__item--first .results__item--right {
+    text-align: center;
+  }
+  .results__item--first .results__item--right h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .results__item--first .results__item--right h3.price {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .results__item--second .item {
+    text-align: center;
+  }
+  .results__item--second h5 {
+    display: block;
+    align-items: center;
+  }
+  .results__item--third {
+    display: block;
+    float: unset;
+    text-align: center;
+    padding: 1rem;
+  }
+  .results__contant__button {
+    margin-bottom: 1rem;
+  }
+  .note .section__title h1 {
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0;
+  }
+  .note__box--first {
+    padding: 1.5rem;
+    margin: 0.5rem;
+  }
+  .note__box--first h2 {
+    font-size: 24px;
+    line-height: 30px;
+    display: block;
+  }
+  .note__box--first p {
+    line-height: 20px;
+    display: block;
+  }
+  .note__box--second {
+    padding: 0 1rem;
+    margin: 1rem 0.5rem;
+  }
+  .note__box--second h4 {
+    font-size: 16px;
+    line-height: 150%;
+    display: block;
+  }
+  .note__box--third {
+    padding: 1rem;
+    margin: 2rem 2.5rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .note__box--third p {
+    padding-top: 10px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 33px */
+    display: block;
+    align-items: center;
+    text-align: center;
+    color: #000000;
   }
 }
 .extra {

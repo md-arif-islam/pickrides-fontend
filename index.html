@@ -13,6 +13,8 @@
   <link rel="stylesheet" type="text/css" href="./vendors/slick-slider/css/slick.css" />
   <!-- Font Awesome 5 -->
   <link rel="stylesheet" href="./vendors/font-awesome/css/all.min.css" />
+  <!-- Flatpickr 4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -212,21 +214,53 @@
               </div>
               <div class="form__inputs">
                 <form action="">
-                  <input type="button" name="" id="pikup-point" class="form__inputs--picuppoints"
-                    placeholder="Pickup Point">
-                  <input type="text" name="" id="pikup-point" class="form__inputs--picuppoints"
-                    placeholder="Pickup Point">
-                  <input type="text" name="" id="pikup-point" class="form__inputs--picuppoints"
-                    placeholder="Pickup Point">
-                  <input type="text" name="" id="pikup-point" class="form__inputs--picuppoints"
-                    placeholder="Pickup Point">
-                  <input type="text" name="" id="pikup-point" class="form__inputs--picuppoints"
-                    placeholder="Pickup Point">
-                  <input type="text" name="" id="pikup-point" class="form__inputs--picuppoints"
-                    placeholder="Pickup Point">
-                  <input type="text" name="" id="pikup-point" class="form__inputs--picuppoints"
-                    placeholder="Pickup Point">
-                  <button type="submit" class="form__inputs--submitbutton">Find Deals</button>
+                  <select class="form-select form__select" aria-label="Default select example">
+                    <option selected disabled>Pickup Point</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+
+                  <select class="form-select form__select" aria-label="Default select example">
+                    <option selected disabled>Dropoff</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+
+                  <div id="form-date">
+                    <input type="date" name="appt" placeholder="Pike Up Date" data-input>
+
+                    <a class="input-button" title="toggle" data-toggle>
+                      <i class="fa fa-calendar"></i>
+                    </a>
+                  </div>
+
+                  <div id="form-time">
+                    <input type="time" name="appt" placeholder="Pike Up Time" data-input>
+
+                    <a class="input-button" title="toggle" data-toggle>
+                      <i class="fa fa-clock-o"></i>
+                    </a>
+                  </div>
+
+                  <div id="form-date-return">
+                    <input type="date" name="appt" placeholder="Return Up Date" data-input>
+
+                    <a class="input-button" title="toggle" data-toggle>
+                      <i class="fa fa-calendar"></i>
+                    </a>
+                  </div>
+
+                  <div id="form-time-return">
+                    <input type="time" name="appt" placeholder="Return Up Time" data-input>
+
+                    <a class="input-button" title="toggle" data-toggle>
+                      <i class="fa fa-clock-o"></i>
+                    </a>
+                  </div>
+
+
                 </form>
               </div>
             </div>
@@ -666,8 +700,31 @@
   <script type="text/javascript" src="./vendors/waypoint/jquery.waypoints.min.js"></script>
   <!-- Navigation -->
   <script src="./js/navigation.js"></script>
+  <!-- Flatpickr 4 -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <!-- Js -->
   <script src="./js/app.js"></script>
+  <script>
+    $("#form-date").flatpickr({
+      wrap: true,
+    });
+
+    $("#form-time").flatpickr({
+      enableTime: true,
+      noCalendar: true,
+      wrap: true,
+    });
+
+    $("#form-date-return").flatpickr({
+      wrap: true,
+    });
+
+    $("#form-time-return").flatpickr({
+      enableTime: true,
+      noCalendar: true,
+      wrap: true,
+    });
+  </script>
 </body>
 
 </html>

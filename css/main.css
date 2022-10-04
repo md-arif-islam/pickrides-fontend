@@ -84,6 +84,7 @@ a:hover {
 }
 section {
   padding: 120px 0;
+  position: relative;
 }
 
 @media only screen and (max-width: 991.98px) {
@@ -101,15 +102,6 @@ section {
     padding: 50px 20px;
   }
 }
-button {
-  transition: transform 0.3s ease;
-}
-
-button:hover {
-  transform: translateY(-10px);
-  transition: transform 0.3s ease;
-}
-
 .social-icon__list {
   list-style: none;
   display: flex;
@@ -143,6 +135,17 @@ button:hover {
 .footer {
   background-color: #fcfeff;
   padding: 120px 0;
+  position: relative;
+  margin-bottom: 50px;
+}
+.footer .side__img {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
+.footer .side__img img {
+  width: 100%;
+  height: auto;
 }
 .footer__first {
   padding: 5rem 0;
@@ -841,6 +844,24 @@ button:hover {
 #about {
   background-color: #fcfeff;
 }
+#about .side__img {
+  position: absolute;
+  top: 10%;
+  left: 0;
+}
+#about .side__img img {
+  width: 100%;
+  height: auto;
+}
+#about .side__img--two {
+  position: absolute;
+  bottom: 5%;
+  left: 15%;
+}
+#about .side__img--two img {
+  width: 100%;
+  height: auto;
+}
 #about .about__cards {
   padding: 40px 0 20px 0;
 }
@@ -866,6 +887,15 @@ button:hover {
 
 #transfer {
   background-color: #fcfcfc;
+}
+#transfer .side__img {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+}
+#transfer .side__img img {
+  width: 100%;
+  height: auto;
 }
 #transfer .transfer__cards {
   display: flex;
@@ -939,6 +969,15 @@ button:hover {
   position: relative;
   height: auto;
 }
+.projects .side__img {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+}
+.projects .side__img img {
+  width: 100%;
+  height: auto;
+}
 .projects__contant .grid {
   position: relative;
   height: auto;
@@ -1005,6 +1044,15 @@ button:hover {
 
 .fleet {
   background-color: #fcfeff;
+}
+.fleet .side__img {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+}
+.fleet .side__img img {
+  width: 100%;
+  height: auto;
 }
 .fleet .fleet-carousel {
   margin: 40px 0 20px 0;
@@ -1078,6 +1126,15 @@ button:hover {
 .app {
   background-color: #fcfeff;
 }
+.app .side__img {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+}
+.app .side__img img {
+  width: 100%;
+  height: auto;
+}
 .app_background {
   background: url("../img/app-bg.png");
   background-size: cover;
@@ -1124,7 +1181,15 @@ button:hover {
 
 .subscribe {
   background-color: #fcfeff;
-  position: relative;
+}
+.subscribe .side__img {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+}
+.subscribe .side__img img {
+  width: 100%;
+  height: auto;
 }
 .subscribe__background {
   background-color: #fff;
@@ -1212,6 +1277,10 @@ button:hover {
 }
 
 @media only screen and (max-width: 1399.98px) {
+  .side__img,
+.side__img--two {
+    display: none;
+  }
   #transfer .transfer__cards .transfer__card {
     margin: 15px;
     text-align: center;

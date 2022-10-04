@@ -1,6 +1,19 @@
 .footer {
   background-color: #fcfeff;
   padding: 120px 0;
+  position: relative;
+  margin-bottom: 50px;
+
+  .side__img {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 
   &__first {
     padding: 5rem 0;

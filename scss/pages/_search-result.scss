@@ -47,8 +47,13 @@
         width: 100%;
 
         input {
-        padding: 10px 5px;
+          text-align: left;
+          padding: 10px 10px;
+          background-color: #fff;
 
+          &::placeholder {
+            color: #000;
+          }
         }
 
         label {

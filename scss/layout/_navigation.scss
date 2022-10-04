@@ -27,6 +27,21 @@
       padding-bottom: 0.5rem;
     }
   }
+  &__search-white {
+    display: inline-block;
+  }
+
+  &__search-black {
+    display: none;
+  }
+
+  &__sticky &__search-white {
+    display: none;
+  }
+
+  &__sticky &__search-black {
+    display: inline-block;
+  }
 
   &__nav {
     display: flex;

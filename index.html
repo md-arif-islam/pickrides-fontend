@@ -76,7 +76,8 @@
               </li>
               <li class="navigation__item d-flex align-items-center">
                 <a class="navigation__link" href="#">
-                  <img style="padding-right: 10px;" class="navigation__search" src="./img/cart-icon.png" />
+                  <img style="padding-right: 10px;" class="navigation__search-white" src="./img/cart-icon.png" />
+                  <img style="padding-right: 10px;" class="navigation__search-black" src="./img/cart-black.png" />
                   Cart
                 </a>
               </li>
@@ -132,7 +133,7 @@
             </li>
             <li class="side-nav__item d-flex align-items-center">
               <a class="side-nav__link" href="#">
-                <img style="padding-right: 10px;" class="navigation__search" src="./img/cart-icon.png" />Cart
+                <img style="padding-right: 10px;" class="navigation__search" src="./img/cart-black.png" />Cart
               </a>
             </li>
           </ul>
@@ -248,38 +249,39 @@
                 </ul>
               </div>
               <div class="form__inputs">
-                <form action="">
-                  <select class="form-select form__select" aria-label="Default select example">
-                    <option selected disabled>Pickup Point</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
+                <div class="form__inputs--one">
+                  <form action="">
+                    <select class="form-select form__select" aria-label="Default select example">
+                      <option selected disabled>Pickup Point</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
 
-                  <select class="form-select form__select" aria-label="Default select example">
-                    <option selected disabled>Dropoff</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
+                    <select class="form-select form__select" aria-label="Default select example">
+                      <option selected disabled>Dropoff</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
 
-                  <div id="form-date">
-                    <input type="date" name="appt" placeholder="Pike Up Date" data-input>
+                    <div id="form-date">
+                      <input type="date" name="appt" placeholder="Pike Up Date" data-input>
 
-                    <a class="input-button" title="toggle" data-toggle>
-                      <i class="fa fa-calendar"></i>
-                    </a>
-                  </div>
+                      <a class="input-button" title="toggle" data-toggle>
+                        <i class="fa fa-calendar"></i>
+                      </a>
+                    </div>
 
-                  <div id="form-time">
-                    <input type="date" name="appt" placeholder="Pike Up Time" data-input>
+                    <div id="form-time">
+                      <input type="date" name="appt" placeholder="Pike Up Time" data-input>
 
-                    <a class="input-button" title="toggle" data-toggle>
-                      <i class="fa fa-clock-o"></i>
-                    </a>
-                  </div>
+                      <a class="input-button" title="toggle" data-toggle>
+                        <i class="fa fa-clock-o"></i>
+                      </a>
+                    </div>
 
-                  <!-- <div id="form-time">
+                    <!-- <div id="form-time">
                     <input id="pickup-time" type="time" name="appt" placeholder="Pike Up Time" data-input>
 
                     <label for="pickup-time">
@@ -301,50 +303,154 @@
                     </label>
                   </div> -->
 
-                  <div id="form-number">
-                    <input id="number-input" type="number" name="appt" placeholder="Number of Travelars" data-input>
+                    <div id="form-number">
+                      <input id="number-input" type="number" name="appt" placeholder="Number of Travelars" data-input>
 
-                    <label for="number-input">
-                      <div class="number-input-label">
-                        <a class="icon-minus">
-                          <i class="fas fa-minus-circle"></i>
+                      <label for="number-input">
+                        <div class="number-input-label">
+                          <a class="icon-minus">
+                            <i class="fas fa-minus-circle"></i>
+                          </a>
+
+
+                          <div class="number-bar"></div>
+
+                          <div class="number-input-text">
+                            <p>0</p>
+                          </div>
+
+                          <div class="number-bar"></div>
+
+                          <a class="icon-plus">
+                            <i class="fas fa-plus-circle"></i>
+                          </a>
+                        </div>
+                      </label>
+                    </div>
+
+                    <div id="form-date-return">
+                      <input type="date" name="appt" placeholder="Return Pickup Date" data-input>
+
+                      <a class="input-button" title="toggle" data-toggle>
+                        <i class="fa fa-calendar"></i>
+                      </a>
+                    </div>
+
+                    <div id="form-time-return">
+                      <input type="date" name="appt" placeholder="Return Pikeup Time" data-input>
+
+                      <a class="input-button" title="toggle" data-toggle>
+                        <i class="fa fa-clock-o"></i>
+                      </a>
+                    </div>
+
+                    <!-- <div id="form-time-return">
+                    <input id="pickup-time" type="time" name="appt" placeholder="Return Up Time" data-input>
+
+                    <label for="pickup-time">
+                      <div class="form-time-label">
+                        <a class="icon-clock">
+                          <i class="fas fa-clock"></i>
                         </a>
 
-
-                        <div class="number-bar"></div>
-
-                        <div class="number-input-text">
+                        <div class="form-time-text">
                           <p>
-                            2
+                            12:14 PM
                           </p>
                         </div>
 
-                        <div class="number-bar"></div>
-
-                        <a class="icon-plus">
-                          <i class="fas fa-plus-circle"></i>
+                        <a class="icon-down-arrow">
+                          <i class="fas fa-chevron-down"></i>
                         </a>
                       </div>
                     </label>
-                  </div>
+                  </div> -->
+                    <button type="submit" class="form__inputs--submitbutton">Find Deals</button>
+                  </form>
+                </div>
 
-                  <div id="form-date-return">
-                    <input type="date" name="appt" placeholder="Return Pickup Date" data-input>
+                <div class="form__inputs--two" style="display:none">
+                  <form action="">
+                    <select class="form-select form__select" aria-label="Default select example">
+                      <option selected disabled>Pickup Point</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
 
-                    <a class="input-button" title="toggle" data-toggle>
-                      <i class="fa fa-calendar"></i>
-                    </a>
-                  </div>
+                    <select class="form-select form__select" aria-label="Default select example">
+                      <option selected disabled>Dropoff</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
 
-                  <div id="form-time-return">
-                    <input type="date" name="appt" placeholder="Return Pikeup Time" data-input>
+                    <div id="form-date-two">
+                      <input type="date" name="appt" placeholder="Pike Up Date" data-input>
 
-                    <a class="input-button" title="toggle" data-toggle>
-                      <i class="fa fa-clock-o"></i>
-                    </a>
-                  </div>
+                      <a class="input-button" title="toggle" data-toggle>
+                        <i class="fa fa-calendar"></i>
+                      </a>
+                    </div>
 
-                  <!-- <div id="form-time-return">
+                    <div id="form-time-two">
+                      <input type="date" name="appt" placeholder="Pike Up Time" data-input>
+
+                      <a class="input-button" title="toggle" data-toggle>
+                        <i class="fa fa-clock-o"></i>
+                      </a>
+                    </div>
+
+                    <!-- <div id="form-time">
+                    <input id="pickup-time" type="time" name="appt" placeholder="Pike Up Time" data-input>
+
+                    <label for="pickup-time">
+                      <div class="form-time-label">
+                        <a class="icon-clock">
+                          <i class="fas fa-clock"></i>
+                        </a>
+
+                        <div class="form-time-text">
+                          <p>
+                            12:14 PM
+                          </p>
+                        </div>
+
+                        <a class="icon-down-arrow">
+                          <i class="fas fa-chevron-down"></i>
+                        </a>
+                      </div>
+                    </label>
+                  </div> -->
+
+                    <div id="form-number">
+                      <input id="number-input" type="number" name="appt" placeholder="Number of Travelars" data-input>
+
+                      <label for="number-input">
+                        <div class="number-input-label">
+                          <a class="icon-minus">
+                            <i class="fas fa-minus-circle"></i>
+                          </a>
+
+
+                          <div class="number-bar"></div>
+
+                          <div class="number-input-text">
+                            <p>
+                              2
+                            </p>
+                          </div>
+
+                          <div class="number-bar"></div>
+
+                          <a class="icon-plus">
+                            <i class="fas fa-plus-circle"></i>
+                          </a>
+                        </div>
+                      </label>
+                    </div>
+
+                    <!-- <div id="form-time-return">
                     <input id="pickup-time" type="time" name="appt" placeholder="Return Up Time" data-input>
 
                     <label for="pickup-time">
@@ -366,8 +472,9 @@
                     </label>
                   </div> -->
 
-                  <button type="submit" class="form__inputs--submitbutton">Find Deals</button>
-                </form>
+                    <button type="submit" class="form__inputs--submitbutton">Find Deals</button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -834,10 +941,23 @@
         wrap: true,
       });
 
+      $("#form-date-two").flatpickr({
+        wrap: true,
+      });
+
+      $("#form-time-two").flatpickr({
+        enableTime: true,
+        noCalendar: true,
+        wrap: true,
+      });
+
     });
   </script>
 
   <script>
+    var inputBoxOne = document.querySelector('.form__inputs--one');
+    var inputBoxTwo = document.querySelector('.form__inputs--two');
+
     var triggerTabList = [].slice.call(document.querySelectorAll('#form-tabs a'))
     triggerTabList.forEach(function (triggerEl) {
       triggerEl.addEventListener('click', function (event) {
@@ -846,6 +966,14 @@
           triggerEl.classList.remove('active');
         });
         event.target.classList.add('active');
+
+        if (event.target.textContent === 'Profile') {
+          inputBoxOne.style.display = 'none';
+          inputBoxTwo.style.display = 'block';
+        } else {
+          inputBoxOne.style.display = 'block';
+          inputBoxTwo.style.display = 'none';
+        };
       });
     });
   </script>
@@ -859,6 +987,27 @@
         nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
       });
     });
+  </script>
+
+  <script>
+    const minusBtns = document.querySelectorAll('.icon-minus i');
+    const plusBtns = document.querySelectorAll('.icon-plus i');
+    console.log(minusBtns);
+    minusBtns.forEach((btn) => btn.addEventListener('click', (e) => {
+      const labelBox = e.target.parentNode.parentNode;
+      const textBox = labelBox.querySelector('.number-input-text p');
+
+      if (Number(textBox.textContent) > 0) {
+        textBox.textContent = Number(textBox.textContent) - 1;
+      }
+    }))
+
+    plusBtns.forEach((btn) => btn.addEventListener('click', (e) => {
+      const labelBox = e.target.parentNode.parentNode;
+      const textBox = labelBox.querySelector('.number-input-text p');
+
+      textBox.textContent = Number(textBox.textContent) + 1;
+    }))
   </script>
 </body>
 

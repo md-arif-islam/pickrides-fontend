@@ -475,13 +475,17 @@ button:hover {
   /* identical to box height, or 168% */
 }
 .header .header__main--column .form__container .form__inputs form #form-date,
+.header .header__main--column .form__container .form__inputs form #form-date-two,
 .header .header__main--column .form__container .form__inputs form #form-time,
+.header .header__main--column .form__container .form__inputs form #form-time-two,
 .header .header__main--column .form__container .form__inputs form #form-date-return,
 .header .header__main--column .form__container .form__inputs form #form-time-return {
   position: relative;
 }
 .header .header__main--column .form__container .form__inputs form #form-date .input-button,
+.header .header__main--column .form__container .form__inputs form #form-date-two .input-button,
 .header .header__main--column .form__container .form__inputs form #form-time .input-button,
+.header .header__main--column .form__container .form__inputs form #form-time-two .input-button,
 .header .header__main--column .form__container .form__inputs form #form-date-return .input-button,
 .header .header__main--column .form__container .form__inputs form #form-time-return .input-button {
   position: absolute;
@@ -490,7 +494,9 @@ button:hover {
   transform: translateY(-50%);
 }
 .header .header__main--column .form__container .form__inputs form #form-date .input-button i,
+.header .header__main--column .form__container .form__inputs form #form-date-two .input-button i,
 .header .header__main--column .form__container .form__inputs form #form-time .input-button i,
+.header .header__main--column .form__container .form__inputs form #form-time-two .input-button i,
 .header .header__main--column .form__container .form__inputs form #form-date-return .input-button i,
 .header .header__main--column .form__container .form__inputs form #form-time-return .input-button i {
   color: #dadada;
@@ -682,6 +688,18 @@ button:hover {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
+}
+.navigation__search-white {
+  display: inline-block;
+}
+.navigation__search-black {
+  display: none;
+}
+.navigation__sticky .navigation__search-white {
+  display: none;
+}
+.navigation__sticky .navigation__search-black {
+  display: inline-block;
 }
 .navigation__nav {
   display: flex;
@@ -1406,7 +1424,19 @@ button:hover {
 }
 .rinputs__box--item #form-time input,
 .rinputs__box--item #form-time-return input {
-  padding: 10px 5px;
+  text-align: left;
+  padding: 10px 10px;
+  background-color: #fff;
+}
+.rinputs__box--item #form-time input::-moz-placeholder, .rinputs__box--item #form-time-return input::-moz-placeholder {
+  color: #000;
+}
+.rinputs__box--item #form-time input:-ms-input-placeholder, .rinputs__box--item #form-time-return input:-ms-input-placeholder {
+  color: #000;
+}
+.rinputs__box--item #form-time input::placeholder,
+.rinputs__box--item #form-time-return input::placeholder {
+  color: #000;
 }
 .rinputs__box--item #form-time label,
 .rinputs__box--item #form-time-return label {

@@ -2290,6 +2290,39 @@ button:hover {
   line-height: 22px;
   color: #596771;
 }
+.extra__item--input #form-number {
+  position: relative;
+}
+.extra__item--input #form-number::-webkit-outer-spin-button, .extra__item--input #form-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.extra__item--input #form-number input[type=number] {
+  -moz-appearance: textfield; /* Firefox */
+}
+.extra__item--input #form-number label {
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.extra__item--input #form-number .number-input-label {
+  display: flex;
+  align-items: center;
+}
+.extra__item--input #form-number .number-input-label .number-bar {
+  height: 18px;
+  width: 0.5px;
+  background-color: rgba(0, 0, 0, 0.15);
+  margin: 0 9px;
+}
+.extra__item--input #form-number .number-input-label .number-input-text p {
+  font-size: 12px;
+  line-height: 1;
+  color: #000;
+  margin-bottom: 0;
+}
 
 .pdetails {
   background-color: #fcfeff;

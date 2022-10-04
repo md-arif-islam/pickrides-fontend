@@ -391,28 +391,22 @@ button:hover {
   background: #febb02;
   border-radius: 10px;
 }
-.header .header__main--column .form__container .form__heading {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.header .header__main--column .form__container .form__heading h1 {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
-  text-transform: capitalize;
-  color: #ffffff;
-  border-bottom: 2px solid #fff;
-}
-.header .header__main--column .form__container .form__heading h2 {
+.header .header__main--column .form__container .form__heading .nav .nav-item .nav-link {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: #ffffff;
+  padding-left: 0;
+  padding-right: 0;
+  transition: all 0.2s;
+  border-bottom: 2px solid transparent;
+}
+.header .header__main--column .form__container .form__heading .nav .nav-item .nav-link.active {
+  font-weight: 600;
+  font-size: 16px;
+  border-bottom: 2px solid #fff;
 }
 .header .header__main--column .form__container .form__inputs {
   width: 100%;
@@ -501,6 +495,86 @@ button:hover {
 .header .header__main--column .form__container .form__inputs form #form-time-return .input-button i {
   color: #dadada;
 }
+.header .header__main--column .form__container .form__inputs form #form-time,
+.header .header__main--column .form__container .form__inputs form #form-time-return {
+  position: relative;
+}
+.header .header__main--column .form__container .form__inputs form #form-time label,
+.header .header__main--column .form__container .form__inputs form #form-time-return label {
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.header .header__main--column .form__container .form__inputs form #form-time .form-time-label,
+.header .header__main--column .form__container .form__inputs form #form-time-return .form-time-label {
+  border: 1px solid #ececec;
+  background-color: #fff;
+  padding: 0px 6px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+.header .header__main--column .form__container .form__inputs form #form-time .form-time-label .icon-clock,
+.header .header__main--column .form__container .form__inputs form #form-time-return .form-time-label .icon-clock {
+  margin-right: 7px;
+  color: #89969f;
+}
+.header .header__main--column .form__container .form__inputs form #form-time .form-time-label .icon-clock i,
+.header .header__main--column .form__container .form__inputs form #form-time-return .form-time-label .icon-clock i {
+  font-size: 13px;
+}
+.header .header__main--column .form__container .form__inputs form #form-time .form-time-label .icon-down-arrow,
+.header .header__main--column .form__container .form__inputs form #form-time-return .form-time-label .icon-down-arrow {
+  font-size: 15px;
+  margin-left: 8px;
+  color: #89969f;
+}
+.header .header__main--column .form__container .form__inputs form #form-time .form-time-label .icon-down-arrow i,
+.header .header__main--column .form__container .form__inputs form #form-time-return .form-time-label .icon-down-arrow i {
+  font-size: 13px;
+}
+.header .header__main--column .form__container .form__inputs form #form-time .form-time-label .form-time-text p,
+.header .header__main--column .form__container .form__inputs form #form-time-return .form-time-label .form-time-text p {
+  font-size: 12px;
+  line-height: 1;
+  margin-bottom: 0;
+  color: #000;
+}
+.header .header__main--column .form__container .form__inputs form #form-number {
+  position: relative;
+}
+.header .header__main--column .form__container .form__inputs form #form-number::-webkit-outer-spin-button, .header .header__main--column .form__container .form__inputs form #form-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.header .header__main--column .form__container .form__inputs form #form-number input[type=number] {
+  -moz-appearance: textfield; /* Firefox */
+}
+.header .header__main--column .form__container .form__inputs form #form-number label {
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.header .header__main--column .form__container .form__inputs form #form-number .number-input-label {
+  display: flex;
+  align-items: center;
+}
+.header .header__main--column .form__container .form__inputs form #form-number .number-input-label .number-bar {
+  height: 18px;
+  width: 0.5px;
+  background-color: rgba(0, 0, 0, 0.15);
+  margin: 0 9px;
+}
+.header .header__main--column .form__container .form__inputs form #form-number .number-input-label .number-input-text p {
+  font-size: 12px;
+  line-height: 1;
+  color: #000;
+  margin-bottom: 0;
+}
 
 @media only screen and (max-width: 1399.98px) {
   .header {
@@ -526,6 +600,20 @@ button:hover {
   }
   .header .header__main--column .testimonials__item p {
     padding-top: 5px;
+  }
+  .header .header__main--column .testimonials .slick-prev.slick-arrow {
+    display: none !important;
+  }
+  .header .header__main--column .testimonials .slick-next.pull-right.slick-arrow {
+    height: 50px !important;
+    min-width: 50px !important;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.144);
+    color: #fff;
+    margin-top: 54px;
+    transform: none;
   }
   .header .header__main--column .form__container {
     width: 100%;
@@ -1310,6 +1398,58 @@ button:hover {
   line-height: 24px;
   /* identical to box height, or 168% */
   color: #898989;
+}
+.rinputs__box--item #form-time,
+.rinputs__box--item #form-time-return {
+  position: relative;
+  width: 100%;
+}
+.rinputs__box--item #form-time input,
+.rinputs__box--item #form-time-return input {
+  padding: 10px 5px;
+}
+.rinputs__box--item #form-time label,
+.rinputs__box--item #form-time-return label {
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.rinputs__box--item #form-time .form-time-label,
+.rinputs__box--item #form-time-return .form-time-label {
+  border: 1px solid #ececec;
+  background-color: #fff;
+  padding: 0px 6px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+.rinputs__box--item #form-time .form-time-label .icon-clock,
+.rinputs__box--item #form-time-return .form-time-label .icon-clock {
+  margin-right: 7px;
+  color: #89969f;
+}
+.rinputs__box--item #form-time .form-time-label .icon-clock i,
+.rinputs__box--item #form-time-return .form-time-label .icon-clock i {
+  font-size: 13px;
+}
+.rinputs__box--item #form-time .form-time-label .icon-down-arrow,
+.rinputs__box--item #form-time-return .form-time-label .icon-down-arrow {
+  font-size: 15px;
+  margin-left: 8px;
+  color: #89969f;
+}
+.rinputs__box--item #form-time .form-time-label .icon-down-arrow i,
+.rinputs__box--item #form-time-return .form-time-label .icon-down-arrow i {
+  font-size: 13px;
+}
+.rinputs__box--item #form-time .form-time-label .form-time-text p,
+.rinputs__box--item #form-time-return .form-time-label .form-time-text p {
+  font-size: 12px;
+  line-height: 1;
+  margin-bottom: 0;
+  color: #000;
 }
 
 .progressbar {

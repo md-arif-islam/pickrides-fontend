@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./vendors/owl.carousel/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="./vendors/owl.carousel/assets/owl.theme.default.min.css">
   <!-- Slick Slider-->
-  <link rel="stylesheet" type="text/css" href="./vendors/slick-slider/css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <!-- Font Awesome 5 -->
   <link rel="stylesheet" href="./vendors/font-awesome/css/all.min.css" />
   <!-- Flatpickr 4 -->
@@ -205,13 +205,47 @@
                   </div>
                 </div>
               </div>
+              <div class="testimonials__item">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 col-sm-6 col-6 py-3 d-flex align-items-center justify-content-center">
+                    <img class="testimonials__item--img" src="./img/testimonial-img.png" alt="">
+                  </div>
+                  <div class="col-lg-8">
+                    <h2>Laura Octavian</h2>
+                    <div class="testimoniall__item--ratings">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <span>4/5</span>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <p>
+                      Far far away, behind the word
+                      mountains, far.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-md-6 d-flex align-items-stretch header__main--column">
             <div class="form__container">
               <div class="form__heading">
-                <h1>Round Trip</h1>
-                <h2>Oneway</h2>
+                <!-- <h1>Round Trip</h1>
+                <h2>Oneway</h2> -->
+                <ul id="form-tabs" class="nav justify-content-between mb-3" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                      type="button" role="tab" aria-controls="pills-home" aria-selected="true">Round Trip</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                      type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+                  </li>
+                </ul>
               </div>
               <div class="form__inputs">
                 <form action="">
@@ -238,15 +272,64 @@
                   </div>
 
                   <div id="form-time">
-                    <input type="time" name="appt" placeholder="Pike Up Time" data-input>
+                    <input type="date" name="appt" placeholder="Pike Up Time" data-input>
 
                     <a class="input-button" title="toggle" data-toggle>
                       <i class="fa fa-clock-o"></i>
                     </a>
                   </div>
 
+                  <!-- <div id="form-time">
+                    <input id="pickup-time" type="time" name="appt" placeholder="Pike Up Time" data-input>
+
+                    <label for="pickup-time">
+                      <div class="form-time-label">
+                        <a class="icon-clock">
+                          <i class="fas fa-clock"></i>
+                        </a>
+
+                        <div class="form-time-text">
+                          <p>
+                            12:14 PM
+                          </p>
+                        </div>
+
+                        <a class="icon-down-arrow">
+                          <i class="fas fa-chevron-down"></i>
+                        </a>
+                      </div>
+                    </label>
+                  </div> -->
+
+                  <div id="form-number">
+                    <input id="number-input" type="number" name="appt" placeholder="Number of Travelars" data-input>
+
+                    <label for="number-input">
+                      <div class="number-input-label">
+                        <a class="icon-minus">
+                          <i class="fas fa-minus-circle"></i>
+                        </a>
+
+
+                        <div class="number-bar"></div>
+
+                        <div class="number-input-text">
+                          <p>
+                            2
+                          </p>
+                        </div>
+
+                        <div class="number-bar"></div>
+
+                        <a class="icon-plus">
+                          <i class="fas fa-plus-circle"></i>
+                        </a>
+                      </div>
+                    </label>
+                  </div>
+
                   <div id="form-date-return">
-                    <input type="date" name="appt" placeholder="Return Up Date" data-input>
+                    <input type="date" name="appt" placeholder="Return Pickup Date" data-input>
 
                     <a class="input-button" title="toggle" data-toggle>
                       <i class="fa fa-calendar"></i>
@@ -254,16 +337,36 @@
                   </div>
 
                   <div id="form-time-return">
-                    <input type="time" name="appt" placeholder="Return Up Time" data-input>
+                    <input type="date" name="appt" placeholder="Return Pikeup Time" data-input>
 
                     <a class="input-button" title="toggle" data-toggle>
                       <i class="fa fa-clock-o"></i>
                     </a>
                   </div>
 
+                  <!-- <div id="form-time-return">
+                    <input id="pickup-time" type="time" name="appt" placeholder="Return Up Time" data-input>
+
+                    <label for="pickup-time">
+                      <div class="form-time-label">
+                        <a class="icon-clock">
+                          <i class="fas fa-clock"></i>
+                        </a>
+
+                        <div class="form-time-text">
+                          <p>
+                            12:14 PM
+                          </p>
+                        </div>
+
+                        <a class="icon-down-arrow">
+                          <i class="fas fa-chevron-down"></i>
+                        </a>
+                      </div>
+                    </label>
+                  </div> -->
+
                   <button type="submit" class="form__inputs--submitbutton">Find Deals</button>
-
-
                 </form>
               </div>
             </div>
@@ -691,10 +794,12 @@
   </footer>
 
   <!-- Bootstrap 4 Scripts-->
-  <script src=" ./vendors/jquery/jquery-slim.min.js"></script>
-  <script src="./vendors/popper/popper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
   <!-- Slick Slider -->
-  <script type="text/javascript" src="./vendors/slick-slider/js/slick.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!-- owl.carousel -->
   <script src="./vendors/owl.carousel/owl.carousel.min.js"></script>
 
@@ -708,24 +813,51 @@
   <!-- Js -->
   <script src="./js/app.js"></script>
   <script>
-    $("#form-date").flatpickr({
-      wrap: true,
-    });
+    $(document).ready(function () {
+      $("#form-date").flatpickr({
+        wrap: true,
+      });
 
-    $("#form-time").flatpickr({
-      enableTime: true,
-      noCalendar: true,
-      wrap: true,
-    });
+      $("#form-time").flatpickr({
+        enableTime: true,
+        noCalendar: true,
+        wrap: true,
+      });
 
-    $("#form-date-return").flatpickr({
-      wrap: true,
-    });
+      $("#form-date-return").flatpickr({
+        wrap: true,
+      });
 
-    $("#form-time-return").flatpickr({
-      enableTime: true,
-      noCalendar: true,
-      wrap: true,
+      $("#form-time-return").flatpickr({
+        enableTime: true,
+        noCalendar: true,
+        wrap: true,
+      });
+
+    });
+  </script>
+
+  <script>
+    var triggerTabList = [].slice.call(document.querySelectorAll('#form-tabs a'))
+    triggerTabList.forEach(function (triggerEl) {
+      triggerEl.addEventListener('click', function (event) {
+        event.preventDefault()
+        triggerTabList.forEach(function (triggerEl) {
+          triggerEl.classList.remove('active');
+        });
+        event.target.classList.add('active');
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $('.testimonials').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 5,
+        nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+      });
     });
   </script>
 </body>

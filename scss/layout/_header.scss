@@ -115,27 +115,23 @@
         border-radius: 10px;
 
         .form__heading {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          h1 {
-            font-family: "Lato";
-            font-style: normal;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 24px;
-            text-transform: capitalize;
-            color: #ffffff;
-            border-bottom: 2px solid #fff;
-          }
-
-          h2 {
+          .nav .nav-item .nav-link {
             font-family: "Lato";
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
             line-height: 24px;
             color: #ffffff;
+            padding-left: 0;
+            padding-right: 0;
+            transition: all 0.2s;
+            border-bottom: 2px solid transparent;
+          }
+
+          .nav .nav-item .nav-link.active {
+            font-weight: 600;
+            font-size: 16px;
+            border-bottom: 2px solid #fff;
           }
         }
 
@@ -215,6 +211,105 @@
                 }
               }
             }
+
+            #form-time,
+            #form-time-return {
+              position: relative;
+
+              label {
+                position: absolute;
+                top: 50%;
+                right: 13px;
+                transform: translateY(-50%);
+                cursor: pointer;
+              }
+
+              .form-time-label {
+                border: 1px solid #ececec;
+                background-color: #fff;
+                padding: 0px 6px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+
+                .icon-clock {
+                  margin-right: 7px;
+                  color: #89969f;
+
+                  i {
+                    font-size: 13px;
+                  }
+                }
+
+                .icon-down-arrow {
+                  font-size: 15px;
+                  margin-left: 8px;
+                  color: #89969f;
+
+                  i {
+                    font-size: 13px;
+                  }
+                }
+
+                .form-time-text {
+                  p {
+                    font-size: 12px;
+                    line-height: 1;
+                    margin-bottom: 0;
+                    color: #000;
+                  }
+                }
+              }
+            }
+
+            #form-number {
+              position: relative;
+
+              &::-webkit-outer-spin-button,
+              &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+              }
+
+              input[type="number"] {
+                -moz-appearance: textfield; /* Firefox */
+              }
+
+              label {
+                position: absolute;
+                top: 50%;
+                right: 13px;
+                transform: translateY(-50%);
+                cursor: pointer;
+              }
+
+              .number-input-label {
+                display: flex;
+                align-items: center;
+
+                .icon-minus {
+                }
+
+                .icon-plus {
+                }
+
+                .number-bar {
+                  height: 18px;
+                  width: 0.5px;
+                  background-color: rgba(0, 0, 0, 0.15);
+                  margin: 0 9px;
+                }
+
+                .number-input-text {
+                  p {
+                    font-size: 12px;
+                    line-height: 1;
+                    color: #000;
+                    margin-bottom: 0;
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -265,6 +360,22 @@
             p {
               padding-top: 5px;
             }
+          }
+
+          .slick-prev.slick-arrow {
+            display: none !important;
+          }
+
+          .slick-next.pull-right.slick-arrow {
+            height: 50px !important;
+            min-width: 50px !important;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.144);
+            color: #fff;
+            margin-top: 54px;
+            transform: none;
           }
         }
 

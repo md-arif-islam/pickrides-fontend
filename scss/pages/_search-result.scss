@@ -40,6 +40,62 @@
           color: #898989;
         }
       }
+
+      #form-time,
+      #form-time-return {
+        position: relative;
+        width: 100%;
+
+        input {
+        padding: 10px 5px;
+
+        }
+
+        label {
+          position: absolute;
+          top: 50%;
+          right: 13px;
+          transform: translateY(-50%);
+          cursor: pointer;
+        }
+
+        .form-time-label {
+          border: 1px solid #ececec;
+          background-color: #fff;
+          padding: 0px 6px;
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+
+          .icon-clock {
+            margin-right: 7px;
+            color: #89969f;
+
+            i {
+              font-size: 13px;
+            }
+          }
+
+          .icon-down-arrow {
+            font-size: 15px;
+            margin-left: 8px;
+            color: #89969f;
+
+            i {
+              font-size: 13px;
+            }
+          }
+
+          .form-time-text {
+            p {
+              font-size: 12px;
+              line-height: 1;
+              margin-bottom: 0;
+              color: #000;
+            }
+          }
+        }
+      }
     }
   }
 }

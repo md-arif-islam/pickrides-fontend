@@ -1,6 +1,28 @@
 #about {
   background-color: #fcfeff;
 
+  .side__img {
+    position: absolute;
+    top: 10%;
+    left: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .side__img--two {
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
   .about__cards {
     padding: 40px 0 20px 0;
     &--img {
@@ -27,6 +49,15 @@
 }
 
 #transfer {
+  .side__img {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
   background-color: #fcfcfc;
   .transfer__cards {
     display: flex;
@@ -104,6 +135,16 @@
 }
 
 .projects {
+  .side__img {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
   background-color: #f9f9f9;
   position: relative;
   height: auto;
@@ -190,6 +231,17 @@
 .fleet {
   background-color: #fcfeff;
 
+  .side__img {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
   .fleet-carousel {
     margin: 40px 0 20px 0;
   }
@@ -275,6 +327,18 @@
 
 .app {
   background-color: #fcfeff;
+
+  .side__img {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
   &_background {
     background: url("../img/app-bg.png");
     background-size: cover;
@@ -330,7 +394,17 @@
 
 .subscribe {
   background-color: #fcfeff;
-  position: relative;
+
+  .side__img {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 
   &__background {
     background-color: #fff;
@@ -411,6 +485,11 @@
 
 // X-Large devices (large desktops, less than 1400px)
 @media only screen and (max-width: 1399.98px) {
+  .side__img,
+  .side__img--two {
+    display: none;
+  }
+
   #transfer {
     .transfer__cards {
       .transfer__card {

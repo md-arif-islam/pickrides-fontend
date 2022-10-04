@@ -12,6 +12,19 @@
     }
   }
 
+  @media only screen and (max-width: 1600px) {
+    .side__img {
+      position: absolute;
+      top: 10%;
+      left: -5%;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
   .side__img--two {
     position: absolute;
     bottom: 5%;
@@ -56,6 +69,18 @@
     img {
       width: 100%;
       height: auto;
+    }
+  }
+
+  @media only screen and (max-width: 1600px) {
+    .side__img {
+      position: absolute;
+      bottom: 10%;
+      right: -5%;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
   background-color: #fcfcfc;
@@ -142,6 +167,19 @@
     img {
       width: 100%;
       height: auto;
+    }
+  }
+
+  @media only screen and (max-width: 1600px) {
+    .side__img {
+      position: absolute;
+      top: 10%;
+      left: -5%;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 
@@ -242,6 +280,18 @@
     }
   }
 
+  @media only screen and (max-width: 1600px) {
+    .side__img {
+      position: absolute;
+      bottom: 10%;
+      right: -5%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
   .fleet-carousel {
     margin: 40px 0 20px 0;
   }
@@ -339,6 +389,19 @@
     }
   }
 
+  @media only screen and (max-width: 1600px) {
+    .side__img {
+      position: absolute;
+      top: 10%;
+      left: -5%;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
   &_background {
     background: url("../img/app-bg.png");
     background-size: cover;
@@ -403,6 +466,18 @@
     img {
       width: 100%;
       height: auto;
+    }
+  }
+
+  @media only screen and (max-width: 1600px) {
+    .side__img {
+      position: absolute;
+      bottom: 10%;
+      right: -5%;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 

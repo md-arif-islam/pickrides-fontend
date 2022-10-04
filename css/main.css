@@ -334,6 +334,20 @@ section {
   display: flex;
   flex-direction: row;
 }
+.header .header__main--column .testimonials .slick-prev.slick-arrow {
+  display: none !important;
+}
+.header .header__main--column .testimonials .slick-next.pull-right.slick-arrow {
+  height: 50px !important;
+  min-width: 50px !important;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.144);
+  color: #fff;
+  margin-top: 54px;
+  transform: none;
+}
 .header .header__main--column .testimonials__item {
   background: rgba(255, 255, 255, 0.144);
   -webkit-backdrop-filter: blur(9.66px);
@@ -604,20 +618,6 @@ section {
   .header .header__main--column .testimonials__item p {
     padding-top: 5px;
   }
-  .header .header__main--column .testimonials .slick-prev.slick-arrow {
-    display: none !important;
-  }
-  .header .header__main--column .testimonials .slick-next.pull-right.slick-arrow {
-    height: 50px !important;
-    min-width: 50px !important;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    background-color: rgba(255, 255, 255, 0.144);
-    color: #fff;
-    margin-top: 54px;
-    transform: none;
-  }
   .header .header__main--column .form__container {
     width: 100%;
     padding: 15px;
@@ -853,6 +853,17 @@ section {
   width: 100%;
   height: auto;
 }
+@media only screen and (max-width: 1600px) {
+  #about .side__img {
+    position: absolute;
+    top: 10%;
+    left: -5%;
+  }
+  #about .side__img img {
+    width: 100%;
+    height: auto;
+  }
+}
 #about .side__img--two {
   position: absolute;
   bottom: 5%;
@@ -896,6 +907,17 @@ section {
 #transfer .side__img img {
   width: 100%;
   height: auto;
+}
+@media only screen and (max-width: 1600px) {
+  #transfer .side__img {
+    position: absolute;
+    bottom: 10%;
+    right: -5%;
+  }
+  #transfer .side__img img {
+    width: 100%;
+    height: auto;
+  }
 }
 #transfer .transfer__cards {
   display: flex;
@@ -978,6 +1000,17 @@ section {
   width: 100%;
   height: auto;
 }
+@media only screen and (max-width: 1600px) {
+  .projects .side__img {
+    position: absolute;
+    top: 10%;
+    left: -5%;
+  }
+  .projects .side__img img {
+    width: 100%;
+    height: auto;
+  }
+}
 .projects__contant .grid {
   position: relative;
   height: auto;
@@ -1053,6 +1086,17 @@ section {
 .fleet .side__img img {
   width: 100%;
   height: auto;
+}
+@media only screen and (max-width: 1600px) {
+  .fleet .side__img {
+    position: absolute;
+    bottom: 10%;
+    right: -5%;
+  }
+  .fleet .side__img img {
+    width: 100%;
+    height: auto;
+  }
 }
 .fleet .fleet-carousel {
   margin: 40px 0 20px 0;
@@ -1135,6 +1179,17 @@ section {
   width: 100%;
   height: auto;
 }
+@media only screen and (max-width: 1600px) {
+  .app .side__img {
+    position: absolute;
+    top: 10%;
+    left: -5%;
+  }
+  .app .side__img img {
+    width: 100%;
+    height: auto;
+  }
+}
 .app_background {
   background: url("../img/app-bg.png");
   background-size: cover;
@@ -1190,6 +1245,17 @@ section {
 .subscribe .side__img img {
   width: 100%;
   height: auto;
+}
+@media only screen and (max-width: 1600px) {
+  .subscribe .side__img {
+    position: absolute;
+    bottom: 10%;
+    right: -5%;
+  }
+  .subscribe .side__img img {
+    width: 100%;
+    height: auto;
+  }
 }
 .subscribe__background {
   background-color: #fff;

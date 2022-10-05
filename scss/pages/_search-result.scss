@@ -18,6 +18,7 @@
         border: 0;
         outline: 0;
         padding: 10px 20px;
+        background: #fff !important;
 
         font-family: "Lato";
         font-style: normal;
@@ -47,8 +48,13 @@
         width: 100%;
 
         input {
-        padding: 10px 5px;
+          text-align: left;
+          padding: 10px 10px;
+          background-color: #fff;
 
+          &::placeholder {
+            color: #000;
+          }
         }
 
         label {
@@ -112,6 +118,10 @@
     border: 2px solid #fdb417;
     border-radius: 20px;
     padding: 2rem 3rem;
+
+    .margin-t{
+      margin-top: 0.6rem;
+    }
 
     &--item {
       display: flex;

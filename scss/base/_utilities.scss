@@ -3,6 +3,14 @@ section {
   position: relative;
 }
 
+.section-first{
+  padding: 60px 0px 35px 0px;
+}
+
+.section-others{
+  padding: 35px 0;
+}
+
 // Medium devices (tablets, less than 992px)
 @media only screen and (max-width: 991.98px) {
   section {
@@ -21,5 +29,11 @@ section {
 @media only screen and (max-width: 575.98px) {
   section {
     padding: 50px 20px;
+  }
+  .section-others{
+    padding: 20px 0;
+  }
+  .section-first{
+    padding: 40px 0px 0px 0px;
   }
 }

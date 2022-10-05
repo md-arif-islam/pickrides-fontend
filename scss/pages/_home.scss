@@ -400,6 +400,16 @@
         height: auto;
       }
     }
+    .side__img {
+      position: absolute;
+      top: 10%;
+      left: -5%;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 
   &_background {

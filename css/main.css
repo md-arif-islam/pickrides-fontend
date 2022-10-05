@@ -1189,6 +1189,15 @@ section {
     width: 100%;
     height: auto;
   }
+  .app .side__img {
+    position: absolute;
+    top: 10%;
+    left: -5%;
+  }
+  .app .side__img img {
+    width: 100%;
+    height: auto;
+  }
 }
 .app_background {
   background: url("../img/app-bg.png");

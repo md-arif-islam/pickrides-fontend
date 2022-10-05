@@ -61,7 +61,7 @@
                                 <a class="navigation__link" href="#">Itinerary Search</a>
                             </li>
                             <li class="navigation__item">
-                                <a class="navigation__link" href="#">SUSD</a>
+                                <a class="navigation__link" href="#">$USD</a>
                             </li>
                             <li class="navigation__item d-flex align-items-center">
                                 <a class="navigation__link" href="#">EN
@@ -76,7 +76,7 @@
                             <li class="navigation__item d-flex align-items-center">
                                 <a class="navigation__link" href="#">
                                     <img style="padding-right: 10px;" class="navigation__search"
-                                        src="./img/cart-icon.png" />
+                                        src="./img/cart-black.png" />
                                     Cart
                                 </a>
                             </li>
@@ -123,7 +123,7 @@
                             <a class="side-nav__link" href="#">Itinerary Search</a>
                         </li>
                         <li class="side-nav__item">
-                            <a class="side-nav__link" href="#">SUSD</a>
+                            <a class="side-nav__link" href="#">$USD</a>
                         </li>
                         <li class="side-nav__item d-flex align-items-center">
                             <a class="side-nav__link" href="#">EN
@@ -152,42 +152,62 @@
 
         <!--  Result Inputs
     ============================================= -->
-        <section class="rinputs">
-            <div class="container">
-                <div class="row rinputs__box">
-                    <div class="col-lg-3 col-md-6 col-sm-12 rinputs__box--item">
-                        <input type="text" class="airport-nuremberg" value="Airport Nuremberg (NUE)">
+    <section class="rinputs section-others">
+        <div class="container">
+            <div class="row rinputs__box">
+                <div class="col-lg-3 col-md-6 col-sm-12 rinputs__box--item">
+                    <input type="text" class="airport-nuremberg" value="Airport Nuremberg (NUE)" disabled>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 rinputs__box--item">
+                    <input type="text" class="airport-nuremberg" value="Airport Munich (MUC)" disabled>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 rinputs__box--item">
+                    <input type="text" class="airport-nuremberg" value="Tue, Sep 13, 2022" disabled>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 rinputs__box--item">
+                    <div id="form-time-return">
+                        <input id="pickup-time" type="text" name="appt" placeholder="Return Up Time" data-input disabled>
+
+                        <label for="pickup-time">
+                            <div class="form-time-label">
+                                <a class="icon-clock">
+                                    <i class="fas fa-clock"></i>
+                                </a>
+
+                                <div class="form-time-text">
+                                    <p>
+                                        12:14 PM
+                                    </p>
+                                </div>
+
+                                <a class="icon-down-arrow">
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                            </div>
+                        </label>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 rinputs__box--item">
-                        <input type="text" class="airport-nuremberg" value="Airport Nuremberg (NUE)">
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 rinputs__box--item">
-                        <input type="text" class="airport-nuremberg" value="Airport Nuremberg (NUE)">
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 rinputs__box--item">
-                        <input type="text" class="airport-nuremberg" value="Airport Nuremberg (NUE)">
-                    </div>
+                    <!-- <input type="text" class="airport-nuremberg" value="Airport Nuremberg (NUE)"> -->
                 </div>
             </div>
-        </section>
-
+        </div>
+    </section>
         <!--  progress
     ============================================= -->
-        <section class="progressbar">
+        <section class="progressbar section-others">
             <div class="container ">
                 <div class="progressbar__box d-flex flex-row align-items-start">
                     <div class="d-flex justify-content-center progressbar__box--item active">
                         <span>1</span>
                         <p class="mb-0">Choose a Vehicle</p>
                     </div>
-                    <div class="mt-2">
+                    <div class="margin-t">
                         <img src="./img/progress.png" class="img-fluid" />
                     </div>
                     <div class="d-flex justify-content-center progressbar__box--item">
                         <span>2</span>
                         <p class="mb-0">Enter Contact Details</p>
                     </div>
-                    <div class="mt-2">
+                    <div class="margin-t">
                         <img src="./img/progress.png" class="img-fluid" />
                     </div>
                     <div class="d-flex justify-content-center progressbar__box--item">
@@ -200,7 +220,7 @@
 
         <!--  extra
     ============================================= -->
-        <section class="extra">
+        <section class="extra section-others">
             <div class="container">
                 <div class="extra__contant">
                     <div class="extra__contant__button">
@@ -227,7 +247,7 @@
                                 <div class="col-md-3 col-sm-12 extra__item--inputs">
                                     <div class="extra__item--input">
                                         <div id="form-number">
-                                            <input type="number" class="" id="" placeholder="Arrival :">
+                                            <input type="number" class="" id="" placeholder="Arrival :" disabled>
 
                                             <label for="number-input">
                                                 <div class="number-input-label">
@@ -251,7 +271,7 @@
                                             </label>
                                         </div>
                                         <div id="form-number">
-                                            <input type="number" class="" id="" placeholder="Departure :">
+                                            <input type="number" class="" id="" placeholder="Departure :" disabled>
 
                                             <label for="number-input">
                                                 <div class="number-input-label">
@@ -293,7 +313,7 @@
                                 <div class="col-md-3 col-sm-12 extra__item--inputs">
                                     <div class="extra__item--input">
                                         <div id="form-number">
-                                            <input type="number" class="" id="" placeholder="Arrival :">
+                                            <input type="number" class="" id="" placeholder="Arrival :" disabled>
 
                                             <label for="number-input">
                                                 <div class="number-input-label">
@@ -317,7 +337,7 @@
                                             </label>
                                         </div>
                                         <div id="form-number">
-                                            <input type="number" class="" id="" placeholder="Departure :">
+                                            <input type="number" class="" id="" placeholder="Departure :" disabled>
 
                                             <label for="number-input">
                                                 <div class="number-input-label">
@@ -359,7 +379,7 @@
                                 <div class="col-md-3 col-sm-12 extra__item--inputs">
                                     <div class="extra__item--input">
                                         <div id="form-number">
-                                            <input type="number" class="" id="" placeholder="Arrival :">
+                                            <input type="number" class="" id="" placeholder="Arrival :" disabled>
 
                                             <label for="number-input">
                                                 <div class="number-input-label">
@@ -383,7 +403,7 @@
                                             </label>
                                         </div>
                                         <div id="form-number">
-                                            <input type="number" class="" id="" placeholder="Departure :">
+                                            <input type="number" class="" id="" placeholder="Departure :" disabled>
 
                                             <label for="number-input">
                                                 <div class="number-input-label">

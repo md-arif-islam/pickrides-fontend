@@ -11,6 +11,9 @@
     animation-name: animate-navigation;
     animation-duration: 0.3s;
   }
+  .navigation__open-icon{
+    color: #000;
+  }
 
   &__main {
     display: flex;

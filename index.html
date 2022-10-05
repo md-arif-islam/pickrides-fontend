@@ -62,7 +62,7 @@
                 <a class="navigation__link" href="#">Itinerary Search</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#">SUSD</a>
+                <a class="navigation__link" href="#">$USD</a>
               </li>
               <li class="navigation__item d-flex align-items-center">
                 <a class="navigation__link" href="#">EN
@@ -124,7 +124,7 @@
               <a class="side-nav__link" href="#">Itinerary Search</a>
             </li>
             <li class="side-nav__item">
-              <a class="side-nav__link" href="#">SUSD</a>
+              <a class="side-nav__link" href="#">$USD</a>
             </li>
             <li class="side-nav__item d-flex align-items-center">
               <a class="side-nav__link" href="#">EN
@@ -244,7 +244,7 @@
                   </li>
                   <li class="nav-item" role="presentation">
                     <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                      type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+                      type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Oneway</a>
                   </li>
                 </ul>
               </div>
@@ -304,7 +304,7 @@
                   </div> -->
 
                     <div id="form-number">
-                      <input id="number-input" type="number" name="appt" placeholder="Number of Travelars" data-input>
+                      <input id="number-input" type="number" name="appt" placeholder="Number of Travelars" data-input disabled>
 
                       <label for="number-input">
                         <div class="number-input-label">
@@ -901,10 +901,9 @@
   </footer>
 
   <!-- Bootstrap 4 Scripts-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
   <!-- Slick Slider -->
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!-- owl.carousel -->
@@ -967,7 +966,7 @@
         });
         event.target.classList.add('active');
 
-        if (event.target.textContent === 'Profile') {
+        if (event.target.textContent === 'Oneway') {
           inputBoxOne.style.display = 'none';
           inputBoxTwo.style.display = 'block';
         } else {

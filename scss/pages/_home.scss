@@ -49,6 +49,7 @@
 }
 
 #transfer {
+  background-color: #fcfcfc;
   .side__img {
     position: absolute;
     bottom: 10%;
@@ -58,7 +59,6 @@
       height: auto;
     }
   }
-  background-color: #fcfcfc;
   .transfer__cards {
     display: flex;
     flex-direction: row;
@@ -135,6 +135,10 @@
 }
 
 .projects {
+  background-color: #f9f9f9;
+  position: relative;
+  height: auto;
+
   .side__img {
     position: absolute;
     bottom: 5%;
@@ -144,10 +148,6 @@
       height: auto;
     }
   }
-
-  background-color: #f9f9f9;
-  position: relative;
-  height: auto;
 
   &__contant {
     .grid {
@@ -198,7 +198,11 @@
 
       .project_box_text {
         opacity: 1;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 2.88%, rgba(0, 0, 0, 0.8) 80%);
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 2.88%,
+          rgba(0, 0, 0, 0.8) 80%
+        );
         position: absolute;
         top: 60%;
         left: 0;
@@ -479,13 +483,15 @@
   }
 }
 
-// X-Large devices (large desktops, less than 1400px)
-@media only screen and (max-width: 1399.98px) {
+@media only screen and (max-width: 1600px) {
   .side__img,
   .side__img--two {
     display: none;
   }
+}
 
+// X-Large devices (large desktops, less than 1400px)
+@media only screen and (max-width: 1399.98px) {
   #transfer {
     .transfer__cards {
       .transfer__card {

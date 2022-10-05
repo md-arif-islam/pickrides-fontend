@@ -47,6 +47,22 @@
         display: flex;
         flex-direction: row;
 
+        .slick-prev.slick-arrow {
+          display: none !important;
+        }
+
+        .slick-next.pull-right.slick-arrow {
+          height: 50px !important;
+          min-width: 50px !important;
+          border-radius: 50%;
+          border: none;
+          outline: none;
+          background-color: rgba(255, 255, 255, 0.144);
+          color: #fff;
+          margin-top: 54px;
+          transform: none;
+        }
+
         &__item {
           background: rgba(255, 255, 255, 0.144);
           backdrop-filter: blur(9.66px);
@@ -362,22 +378,6 @@
             p {
               padding-top: 5px;
             }
-          }
-
-          .slick-prev.slick-arrow {
-            display: none !important;
-          }
-
-          .slick-next.pull-right.slick-arrow {
-            height: 50px !important;
-            min-width: 50px !important;
-            border-radius: 50%;
-            border: none;
-            outline: none;
-            background-color: rgba(255, 255, 255, 0.144);
-            color: #fff;
-            margin-top: 54px;
-            transform: none;
           }
         }
 

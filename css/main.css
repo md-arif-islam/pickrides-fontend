@@ -6,7 +6,6 @@
     top: 0;
   }
 }
-
 @keyframes animate-navigation {
   0% {
     top: -70px;
@@ -15,12 +14,10 @@
     top: 0;
   }
 }
-
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
@@ -28,16 +25,13 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.7;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: margin 0.9s;
+  box-sizing: border-box;
   transition: margin 0.9s;
 }
 
 a {
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: none;
 }
@@ -47,7 +41,6 @@ a:hover {
   max-width: 600px;
   margin: 0 auto;
 }
-
 .section__title .s-title {
   font-family: "Roboto";
   font-style: normal;
@@ -58,7 +51,6 @@ a:hover {
   color: #000000;
   padding-bottom: 15px;
 }
-
 .section__title .s-desc {
   font-family: "Lato";
   font-style: normal;
@@ -75,7 +67,6 @@ a:hover {
     padding: 50px 20px;
   }
 }
-
 @media only screen and (max-width: 767.98px) {
   .section__title .s-title {
     font-size: 28px;
@@ -86,13 +77,11 @@ a:hover {
     line-height: 22px;
   }
 }
-
 @media only screen and (max-width: 991.98px) {
   section {
     padding: 80px 0px;
   }
 }
-
 section {
   padding: 120px 0;
   position: relative;
@@ -111,13 +100,11 @@ section {
     padding: 80px 0px;
   }
 }
-
 @media only screen and (max-width: 767.98px) {
   section {
     padding: 70px 0px;
   }
 }
-
 @media only screen and (max-width: 575.98px) {
   section {
     padding: 50px 20px;
@@ -129,68 +116,41 @@ section {
     padding: 40px 0px 0px 0px;
   }
 }
-<<<<<<< HEAD
-=======
-
 button {
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 button:hover {
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
+  transform: translateY(-10px);
   transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
->>>>>>> b11cfbc3f77d8b58c2b9e19edd6945d2bf676ab9
 .social-icon__list {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .social-icon__item {
   width: 3.3rem;
   height: 3.3rem;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: .7rem;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.7rem;
+  transition: all 0.2s;
 }
-
 .social-icon__item:hover {
-  -webkit-transform: translateY(-1px) scale(1.07);
-          transform: translateY(-1px) scale(1.07);
+  transform: translateY(-1px) scale(1.07);
 }
-
 .social-icon__link:link, .social-icon__link:visited, .social-icon__link:hover, .social-icon__link:active {
   text-decoration: none;
 }
-
 .social-icon__icon {
   font-size: 1.6rem;
 }
-
 .social-icon__primary .social-icon__item {
   background-color: #0077cc;
 }
-
 .social-icon__primary .social-icon__icon {
   color: #fff;
 }
@@ -199,7 +159,6 @@ button:hover {
   background-color: #fcfeff;
   padding: 120px 0;
   position: relative;
-  margin-bottom: 50px;
 }
 .footer .side__img {
   position: absolute;
@@ -210,17 +169,20 @@ button:hover {
   width: 100%;
   height: auto;
 }
-
+@media only screen and (max-width: 1600px) {
+  .footer .side__img,
+.footer .side__img--two {
+    display: none;
+  }
+}
 .footer__first {
   padding: 5rem 0;
   background-color: #fafafa;
   border-bottom: 1px solid rgba(206, 206, 206, 0.22);
 }
-
 .footer__left {
   padding: 0 4rem;
 }
-
 .footer__left p {
   font-family: "Lato";
   font-style: normal;
@@ -229,23 +191,18 @@ button:hover {
   text-align: left;
   color: #000000;
 }
-
 .footer__logo {
   padding-bottom: 3rem;
 }
-
 .footer__bankingsimgs {
   display: inline-block;
 }
-
 .footer__bankingsimgs--item {
   margin-right: 5px;
 }
-
 .footer__right {
   padding: 0 4rem;
 }
-
 .footer__right h4 {
   font-family: "Lato";
   font-style: normal;
@@ -255,7 +212,6 @@ button:hover {
   text-align: left;
   color: #000000;
 }
-
 .footer__right p {
   font-family: "Lato";
   font-style: normal;
@@ -265,7 +221,6 @@ button:hover {
   text-align: left;
   color: rgba(0, 0, 0, 0.5);
 }
-
 .footer__right button {
   padding: 10px 15px;
   background: linear-gradient(84.89deg, #004077 -68.22%, #0077cc 132.22%);
@@ -277,44 +232,25 @@ button:hover {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   line-height: 17px;
   text-align: center;
   letter-spacing: 0.025em;
-  -webkit-box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
-          box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
+  box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
   text-transform: capitalize;
 }
-
 .footer__right button img {
   padding-left: 5px;
 }
-
 .footer__icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
   padding-top: 1rem;
 }
-
 .footer__icons h5 {
   font-family: "Lato";
   font-style: normal;
@@ -325,7 +261,6 @@ button:hover {
   color: #000000;
   padding-right: 20px;
 }
-
 .footer__icons i {
   width: 20px;
   height: 10px;
@@ -334,17 +269,14 @@ button:hover {
   color: #ffc833;
   margin: 0 10px;
 }
-
 .footer__second {
   padding: 3rem 0;
   background-color: #fafafa;
   border-bottom: 1px solid rgba(206, 206, 206, 0.22);
 }
-
 .footer__second--locations, .footer__second--terms {
   padding: 10px 0;
 }
-
 .footer__second--locations a, .footer__second--terms a {
   font-family: "Lato";
   font-style: normal;
@@ -357,16 +289,13 @@ button:hover {
   color: rgba(0, 0, 0, 0.7);
   border-right: 1px solid rgba(0, 0, 0, 0.7);
 }
-
 .footer__second--locations a:last-child, .footer__second--terms a:last-child {
   border: none;
 }
-
 .footer__copyright {
   padding: 2rem 0;
   background-color: #fafafa;
 }
-
 .footer__copyright--text p {
   font-family: "Roboto";
   font-style: normal;
@@ -384,7 +313,6 @@ button:hover {
     margin-bottom: 40px;
   }
 }
-
 @media only screen and (max-width: 575.98px) {
   .footer {
     padding: 50px 20px 30px 20px;
@@ -393,44 +321,26 @@ button:hover {
     padding: 0 1rem;
   }
 }
-
 .header {
   height: 100vh;
   padding: 1rem 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/header-background.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/header-background.jpg");
   background-position: 50% 53%;
   background-size: cover;
   position: relative;
 }
-
 .header .header__main {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .header .header__main--column {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .header .header__main--column .header__heading--box h1 {
   font-family: "Outfit";
   font-style: normal;
@@ -439,7 +349,6 @@ button:hover {
   line-height: 171.98%;
   color: #ffffff;
 }
-
 .header .header__main--column .header__heading--box p {
   font-family: "Lato";
   font-style: normal;
@@ -448,18 +357,25 @@ button:hover {
   line-height: 200%;
   color: #cdcdcd;
 }
-
 .header .header__main--column .testimonials {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
-
+.header .header__main--column .testimonials .slick-prev.slick-arrow {
+  display: none !important;
+}
+.header .header__main--column .testimonials .slick-next.pull-right.slick-arrow {
+  height: 50px !important;
+  min-width: 50px !important;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.144);
+  color: #fff;
+  margin-top: 54px;
+  transform: none;
+}
 .header .header__main--column .testimonials__item {
   background: rgba(255, 255, 255, 0.144);
   -webkit-backdrop-filter: blur(9.66px);
@@ -467,19 +383,13 @@ button:hover {
   border-radius: 9.44186px;
   padding: 15px;
   margin: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .header .header__main--column .testimonials__item--img {
   width: 100%;
   height: auto;
 }
-
 .header .header__main--column .testimonials__item h2 {
   font-family: "Roboto";
   font-style: normal;
@@ -488,7 +398,6 @@ button:hover {
   line-height: 120%;
   color: #ffffff;
 }
-
 .header .header__main--column .testimonials__item i {
   width: 9px;
   height: 9px;
@@ -497,7 +406,6 @@ button:hover {
   color: #ffc833;
   margin: 0 2px;
 }
-
 .header .header__main--column .testimonials__item span {
   padding-left: 10px;
   font-family: "Lato";
@@ -509,7 +417,6 @@ button:hover {
   text-transform: capitalize;
   color: #676767;
 }
-
 .header .header__main--column .testimonials__item p {
   font-family: "Lato";
   font-style: normal;
@@ -520,7 +427,6 @@ button:hover {
   color: #9098b1;
   padding-top: 10px;
 }
-
 .header .header__main--column .form__container {
   width: 400px;
   max-width: 400px;
@@ -530,7 +436,6 @@ button:hover {
   background: #febb02;
   border-radius: 10px;
 }
-
 .header .header__main--column .form__container .form__heading .nav .nav-item .nav-link {
   font-family: "Lato";
   font-style: normal;
@@ -540,25 +445,20 @@ button:hover {
   color: #ffffff;
   padding-left: 0;
   padding-right: 0;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   border-bottom: 2px solid transparent;
 }
-
 .header .header__main--column .form__container .form__heading .nav .nav-item .nav-link.active {
   font-weight: 600;
   font-size: 16px;
   border-bottom: 2px solid #fff;
 }
-
 .header .header__main--column .form__container .form__inputs {
   width: 100%;
 }
-
 .header .header__main--column .form__container .form__inputs form {
   width: 100%;
 }
-
 .header .header__main--column .form__container .form__inputs form input {
   background: #ffffff;
   border-radius: 5px;
@@ -568,8 +468,7 @@ button:hover {
   outline: 0;
   padding: 10px 20px;
 }
-
-.header .header__main--column .form__container .form__inputs form input::-webkit-input-placeholder {
+.header .header__main--column .form__container .form__inputs form input::-moz-placeholder {
   font-family: "Lato";
   font-style: normal;
   font-weight: 600;
@@ -578,7 +477,6 @@ button:hover {
   /* identical to box height, or 168% */
   color: #898989;
 }
-
 .header .header__main--column .form__container .form__inputs form input:-ms-input-placeholder {
   font-family: "Lato";
   font-style: normal;
@@ -588,17 +486,6 @@ button:hover {
   /* identical to box height, or 168% */
   color: #898989;
 }
-
-.header .header__main--column .form__container .form__inputs form input::-ms-input-placeholder {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
-  /* identical to box height, or 168% */
-  color: #898989;
-}
-
 .header .header__main--column .form__container .form__inputs form input::placeholder {
   font-family: "Lato";
   font-style: normal;
@@ -608,7 +495,6 @@ button:hover {
   /* identical to box height, or 168% */
   color: #898989;
 }
-
 .header .header__main--column .form__container .form__inputs form button {
   margin-top: 20px;
   padding: 10px 15px;
@@ -619,7 +505,6 @@ button:hover {
   border: none;
   outline: none;
 }
-
 .header .header__main--column .form__container .form__inputs form .form__select {
   border-radius: 5px;
   width: 100%;
@@ -634,7 +519,6 @@ button:hover {
   line-height: 24px;
   /* identical to box height, or 168% */
 }
-
 .header .header__main--column .form__container .form__inputs form #form-date,
 .header .header__main--column .form__container .form__inputs form #form-date-two,
 .header .header__main--column .form__container .form__inputs form #form-time,
@@ -643,7 +527,6 @@ button:hover {
 .header .header__main--column .form__container .form__inputs form #form-time-return {
   position: relative;
 }
-
 .header .header__main--column .form__container .form__inputs form #form-date .input-button,
 .header .header__main--column .form__container .form__inputs form #form-date-two .input-button,
 .header .header__main--column .form__container .form__inputs form #form-time .input-button,
@@ -653,10 +536,8 @@ button:hover {
   position: absolute;
   top: 50%;
   right: 15px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-
 .header .header__main--column .form__container .form__inputs form #form-date .input-button i,
 .header .header__main--column .form__container .form__inputs form #form-date-two .input-button i,
 .header .header__main--column .form__container .form__inputs form #form-time .input-button i,
@@ -665,59 +546,46 @@ button:hover {
 .header .header__main--column .form__container .form__inputs form #form-time-return .input-button i {
   color: #dadada;
 }
-
 .header .header__main--column .form__container .form__inputs form #form-time,
 .header .header__main--column .form__container .form__inputs form #form-time-return {
   position: relative;
 }
-
 .header .header__main--column .form__container .form__inputs form #form-time label,
 .header .header__main--column .form__container .form__inputs form #form-time-return label {
   position: absolute;
   top: 50%;
   right: 13px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   cursor: pointer;
 }
-
 .header .header__main--column .form__container .form__inputs form #form-time .form-time-label,
 .header .header__main--column .form__container .form__inputs form #form-time-return .form-time-label {
   border: 1px solid #ececec;
   background-color: #fff;
   padding: 0px 6px;
   border-radius: 4px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .header .header__main--column .form__container .form__inputs form #form-time .form-time-label .icon-clock,
 .header .header__main--column .form__container .form__inputs form #form-time-return .form-time-label .icon-clock {
   margin-right: 7px;
   color: #89969f;
 }
-
 .header .header__main--column .form__container .form__inputs form #form-time .form-time-label .icon-clock i,
 .header .header__main--column .form__container .form__inputs form #form-time-return .form-time-label .icon-clock i {
   font-size: 13px;
 }
-
 .header .header__main--column .form__container .form__inputs form #form-time .form-time-label .icon-down-arrow,
 .header .header__main--column .form__container .form__inputs form #form-time-return .form-time-label .icon-down-arrow {
   font-size: 15px;
   margin-left: 8px;
   color: #89969f;
 }
-
 .header .header__main--column .form__container .form__inputs form #form-time .form-time-label .icon-down-arrow i,
 .header .header__main--column .form__container .form__inputs form #form-time-return .form-time-label .icon-down-arrow i {
   font-size: 13px;
 }
-
 .header .header__main--column .form__container .form__inputs form #form-time .form-time-label .form-time-text p,
 .header .header__main--column .form__container .form__inputs form #form-time-return .form-time-label .form-time-text p {
   font-size: 12px;
@@ -725,46 +593,33 @@ button:hover {
   margin-bottom: 0;
   color: #000;
 }
-
 .header .header__main--column .form__container .form__inputs form #form-number {
   position: relative;
 }
-
 .header .header__main--column .form__container .form__inputs form #form-number::-webkit-outer-spin-button, .header .header__main--column .form__container .form__inputs form #form-number::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
-.header .header__main--column .form__container .form__inputs form #form-number input[type="number"] {
-  -moz-appearance: textfield;
-  /* Firefox */
+.header .header__main--column .form__container .form__inputs form #form-number input[type=number] {
+  -moz-appearance: textfield; /* Firefox */
 }
-
 .header .header__main--column .form__container .form__inputs form #form-number label {
   position: absolute;
   top: 50%;
   right: 13px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   cursor: pointer;
 }
-
 .header .header__main--column .form__container .form__inputs form #form-number .number-input-label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .header .header__main--column .form__container .form__inputs form #form-number .number-input-label .number-bar {
   height: 18px;
   width: 0.5px;
   background-color: rgba(0, 0, 0, 0.15);
   margin: 0 9px;
 }
-
 .header .header__main--column .form__container .form__inputs form #form-number .number-input-label .number-input-text p {
   font-size: 12px;
   line-height: 1;
@@ -797,21 +652,6 @@ button:hover {
   .header .header__main--column .testimonials__item p {
     padding-top: 5px;
   }
-  .header .header__main--column .testimonials .slick-prev.slick-arrow {
-    display: none !important;
-  }
-  .header .header__main--column .testimonials .slick-next.pull-right.slick-arrow {
-    height: 50px !important;
-    min-width: 50px !important;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    background-color: rgba(255, 255, 255, 0.144);
-    color: #fff;
-    margin-top: 54px;
-    -webkit-transform: none;
-            transform: none;
-  }
   .header .header__main--column .form__container {
     width: 100%;
     padding: 15px;
@@ -824,17 +664,12 @@ button:hover {
     margin: 5px 0;
     padding: 5px 20px;
   }
-  .header .header__main--column .form__container .form__inputs form input::-webkit-input-placeholder {
+  .header .header__main--column .form__container .form__inputs form input::-moz-placeholder {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
   }
   .header .header__main--column .form__container .form__inputs form input:-ms-input-placeholder {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .header .header__main--column .form__container .form__inputs form input::-ms-input-placeholder {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
@@ -848,7 +683,6 @@ button:hover {
     margin-top: 15px;
   }
 }
-
 @media only screen and (max-width: 767.98px) {
   .header {
     height: auto;
@@ -858,7 +692,6 @@ button:hover {
     padding: 5rem 0;
   }
 }
-
 .navigation__sticky {
   position: fixed;
   top: 0;
@@ -873,136 +706,96 @@ button:hover {
   -webkit-animation-duration: 0.3s;
           animation-duration: 0.3s;
 }
-
 .navigation .navigation__open-icon {
   color: #000;
 }
-
 .navigation__main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  justify-content: space-between;
+  align-items: baseline;
 }
-
 .navigation__sticky .navigation__main {
   padding-bottom: 0.5rem;
 }
-
 @media only screen and (max-width: 991.98px) {
   .navigation__sticky .navigation__main {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
 }
-
 .navigation__search-white {
   display: inline-block;
 }
-
 .navigation__search-black {
   display: none;
 }
-
 .navigation__sticky .navigation__search-white {
   display: none;
 }
-
 .navigation__sticky .navigation__search-black {
   display: inline-block;
 }
-
 .navigation__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .navigation__list {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  align-items: baseline;
 }
-
 @media only screen and (max-width: 991.98px) {
   .navigation__list {
     display: none;
   }
 }
-
 .navigation__item {
   padding-top: 1rem;
 }
-
 .navigation__item:not(:last-child) {
   margin-right: 2rem;
 }
-
 .navigation__link:link, .navigation__link:visited {
   text-decoration: none;
   display: inline-block;
   padding-bottom: 0.1rem;
   border-bottom: 2.5px solid transparent;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
 }
-
 .navigation__link:hover, .navigation__link:active {
   border-bottom: 2.5px solid #0077cc;
 }
-
-.navigation__sticky .navigation__link:link,
-.navigation__sticky .navigation__link:visited {
+.navigation__sticky .navigation__link:link, .navigation__sticky .navigation__link:visited {
   color: #000;
 }
-
-.navigation__sticky .navigation__link:link i,
-.navigation__sticky .navigation__link:visited i {
+.navigation__sticky .navigation__link:link i, .navigation__sticky .navigation__link:visited i {
   color: #000;
 }
-
 .navigation__open:link, .navigation__open:visited, .navigation__open:hover, .navigation__open:active {
   text-decoration: none;
 }
-
 @media only screen and (max-width: 991.98px) {
   .navigation__btn-box {
     display: none;
   }
 }
-
 .navigation__open-box {
   display: none;
 }
-
 @media only screen and (max-width: 991.98px) {
   .navigation__open-box {
     display: block;
   }
 }
-
 .navigation__open-icon {
   font-size: 1.3rem;
   color: #fff;
   cursor: pointer;
 }
-
 .navigation__sticky .navigation__open-icon {
   color: #fff;
 }
@@ -1011,7 +804,6 @@ button:hover {
 .not__banner .navigation__link:visited {
   color: #000 !important;
 }
-
 .not__banner .navigation__link:link i,
 .not__banner .navigation__link:visited i {
   color: #000;
@@ -1025,117 +817,82 @@ button:hover {
   height: 100%;
   z-index: 1000;
 }
-
 .side-nav__overlay {
   background-color: rgba(34, 34, 34, 0.7);
   width: 100%;
   height: 100%;
   z-index: 500;
-  -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
-
 .side-nav__main {
   position: fixed;
   top: 0;
   right: 0;
   width: 250px;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-color: #222;
-  -webkit-transition: all 1s;
   transition: all 1s;
 }
-
 .side-nav__close-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
   height: 6.5rem;
   padding: 0 2rem;
   border-bottom: 1px solid rgba(51, 51, 51, 0.5);
 }
-
 .side-nav__close-icon {
   font-size: 1.3rem;
   color: #fff;
   cursor: pointer;
 }
-
 .side-nav__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .side-nav__btn-box {
   padding: 5rem 2rem 2rem;
   border-bottom: 1px solid rgba(51, 51, 51, 0.5);
 }
-
 .side-nav__btn-box .btn {
   display: block;
 }
-
 .side-nav__list {
   list-style: none;
 }
-
 .side-nav__item {
   padding: 1.5rem;
   border-bottom: 1px solid rgba(51, 51, 51, 0.5);
 }
-
 .side-nav__link:link, .side-nav__link:visited {
   text-decoration: none;
   display: inline-block;
   padding-bottom: 0.1rem;
   border-bottom: 2.5px solid transparent;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
 }
-
 .side-nav__link:hover, .side-nav__link:active {
   border-bottom: 2.5px solid #0077cc;
 }
-
 .side-nav--close {
   visibility: hidden;
 }
-
 .side-nav--close .side-nav__overlay {
   opacity: 0;
 }
-
 .side-nav--close .side-nav__main {
-  -webkit-transform: translateX(260px);
-          transform: translateX(260px);
+  transform: translateX(260px);
 }
 
 #about {
   background-color: #fcfeff;
 }
-<<<<<<< HEAD
 #about .side__img {
   position: absolute;
   top: 10%;
@@ -1154,26 +911,19 @@ button:hover {
   width: 100%;
   height: auto;
 }
-=======
-
->>>>>>> b11cfbc3f77d8b58c2b9e19edd6945d2bf676ab9
 #about .about__cards {
   padding: 40px 0 20px 0;
 }
-
 #about .about__cards--img {
   background-color: #fff;
   display: inline-block;
   padding: 10px;
   border-radius: 8px;
-  -webkit-box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
-          box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
+  box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
 }
-
 #about .about__cards--title {
   padding: 20px 0 10px 0;
 }
-
 #about .about__cards--title h2 {
   font-family: "Lato";
   font-style: normal;
@@ -1187,7 +937,6 @@ button:hover {
 #transfer {
   background-color: #fcfcfc;
 }
-<<<<<<< HEAD
 #transfer .side__img {
   position: absolute;
   bottom: 10%;
@@ -1197,34 +946,21 @@ button:hover {
   width: 100%;
   height: auto;
 }
-=======
-
->>>>>>> b11cfbc3f77d8b58c2b9e19edd6945d2bf676ab9
 #transfer .transfer__cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
-
 #transfer .transfer__cards .transfer__card {
   margin: 35px;
   padding: 25px;
   text-align: center;
   background-color: #fff;
-  -webkit-box-shadow: 0px 11.2941px 14.1176px #f1f4f9;
-          box-shadow: 0px 11.2941px 14.1176px #f1f4f9;
+  box-shadow: 0px 11.2941px 14.1176px #f1f4f9;
   border-radius: 14.1176px;
 }
-
 #transfer .transfer__cards .transfer__card.custom__scale {
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
+  transform: translateY(50px);
 }
-
 #transfer .transfer__cards .transfer__card h2 {
   padding-top: 10px;
   font-family: "Lato";
@@ -1235,37 +971,28 @@ button:hover {
   letter-spacing: -0.015em;
   color: #000000;
 }
-
 #transfer .transfer__cards .transfer__card p {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 29px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: justify;
   letter-spacing: -0.04em;
   color: #89969f;
 }
-
 #transfer .transfer__cards .transfer__card--first {
   background: linear-gradient(84deg, #004077 -71.2%, #0077cc 124.92%);
 }
-
 #transfer .transfer__cards .transfer__card--first h2,
 #transfer .transfer__cards .transfer__card--first p {
   color: #fff;
 }
-
 #transfer .transfer__title {
   padding: 80px 50px;
 }
-
 #transfer .transfer__title h1 {
   font-family: "Roboto";
   font-style: normal;
@@ -1276,7 +1003,6 @@ button:hover {
   color: #000000;
   padding-bottom: 50px;
 }
-
 #transfer .transfer__title p {
   font-family: "Lato";
   font-style: normal;
@@ -1292,7 +1018,6 @@ button:hover {
   position: relative;
   height: auto;
 }
-<<<<<<< HEAD
 .projects .side__img {
   position: absolute;
   bottom: 5%;
@@ -1302,23 +1027,17 @@ button:hover {
   width: 100%;
   height: auto;
 }
-=======
-
->>>>>>> b11cfbc3f77d8b58c2b9e19edd6945d2bf676ab9
 .projects__contant .grid {
   position: relative;
   height: auto;
 }
-
 .projects__contant__button {
   padding: 20px 0;
 }
-
 .projects__contant__button__group {
   margin: 10px 0;
   list-style: none;
 }
-
 .projects__contant__button__group li {
   display: inline-block;
   margin: 8px 3px;
@@ -1326,7 +1045,6 @@ button:hover {
   color: rgba(0, 0, 0, 0.5);
   padding: 15px;
   font-weight: 500;
-  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   font-family: "Lato";
   font-style: normal;
@@ -1334,28 +1052,23 @@ button:hover {
   font-size: 18px;
   line-height: 22px;
 }
-
 .projects__contant__button__group li:hover, .projects__contant__button__group li.active {
   color: #004077;
   border-radius: 10px;
   background-color: #fff;
 }
-
 .projects__contant .project_box {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
   margin: 30px 0 20px 0;
 }
-
 .projects__contant .project_box img {
   width: 100%;
   height: 100%;
 }
-
 .projects__contant .project_box .project_box_text {
   opacity: 1;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(2.88%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.8)));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 2.88%, rgba(0, 0, 0, 0.8) 80%);
   position: absolute;
   top: 60%;
@@ -1365,7 +1078,6 @@ button:hover {
   text-align: left;
   cursor: pointer;
 }
-
 .projects__contant .project_box .project_box_text p {
   position: absolute;
   bottom: 20px;
@@ -1382,7 +1094,6 @@ button:hover {
 .fleet {
   background-color: #fcfeff;
 }
-<<<<<<< HEAD
 .fleet .side__img {
   position: absolute;
   bottom: 10%;
@@ -1392,41 +1103,32 @@ button:hover {
   width: 100%;
   height: auto;
 }
-=======
-
->>>>>>> b11cfbc3f77d8b58c2b9e19edd6945d2bf676ab9
 .fleet .fleet-carousel {
   margin: 40px 0 20px 0;
 }
-
 .fleet .item {
   margin: 0 30px;
 }
-
 .fleet__content {
   width: 100%;
   height: auto;
 }
-
 .fleet__content .card {
   border: none;
   outline: none;
   padding-top: 40px;
   border-radius: 10px;
 }
-
 .fleet__content .card img {
   width: 90% !important;
   height: auto;
   margin: 0 auto;
 }
-
 .fleet__content .card .card-body {
   padding: 40px 25px;
   background-color: #fefefe;
   text-align: center;
 }
-
 .fleet__content .card .card-body h5 {
   font-family: "Lato";
   font-style: normal;
@@ -1436,7 +1138,6 @@ button:hover {
   color: #000000;
   text-align: center;
 }
-
 .fleet__content .card .card-body a {
   font-family: "Lato";
   font-style: normal;
@@ -1447,17 +1148,13 @@ button:hover {
           text-decoration-line: underline;
   color: #89969f;
 }
-
 .fleet__content .card:hover {
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-
 .fleet .owl-dots {
   margin-top: 30px;
   text-align: center;
 }
-
 .fleet .owl-dots button {
   display: inline-block;
   margin: 0 10px;
@@ -1466,22 +1163,18 @@ button:hover {
   border-radius: 50%;
   background-color: #ddd !important;
 }
-
 .fleet .owl-dots button:focus {
   outline: none;
   border: 0;
 }
-
 .fleet .owl-dots .active {
   background-color: #004077 !important;
-  -webkit-box-shadow: 0px 0px 0px 10px rgba(190, 205, 222, 0.75);
-          box-shadow: 0px 0px 0px 10px rgba(190, 205, 222, 0.75);
+  box-shadow: 0px 0px 0px 10px rgba(190, 205, 222, 0.75);
 }
 
 .app {
   background-color: #fcfeff;
 }
-<<<<<<< HEAD
 .app .side__img {
   position: absolute;
   bottom: 10%;
@@ -1491,39 +1184,23 @@ button:hover {
   width: 100%;
   height: auto;
 }
-=======
-
->>>>>>> b11cfbc3f77d8b58c2b9e19edd6945d2bf676ab9
 .app_background {
   background: url("../img/app-bg.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
-          box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
+  align-items: center;
+  box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
 }
-
 .app__download img {
   padding-right: 20px;
 }
-
 .app__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 20px 60px;
 }
-
 .app__text h1 {
   font-family: "Roboto";
   font-style: normal;
@@ -1534,7 +1211,6 @@ button:hover {
   color: #ffffff;
   padding-bottom: 25px;
 }
-
 .app__text p {
   font-family: "Lato";
   font-style: normal;
@@ -1546,16 +1222,10 @@ button:hover {
   padding-bottom: 2rem;
   width: 65%;
 }
-
 .app__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transform: translateY(-4rem);
-          transform: translateY(-4rem);
+  justify-content: center;
+  transform: translateY(-4rem);
 }
 
 .subscribe {
@@ -1570,24 +1240,19 @@ button:hover {
   width: 100%;
   height: auto;
 }
-
 .subscribe__background {
   background-color: #fff;
-  -webkit-box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
-          box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
+  box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
   padding: 5rem 0;
 }
-
 .subscribe__box {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
 }
-
 .subscribe__box img {
   padding-bottom: 30px;
 }
-
 .subscribe__box p {
   font-family: "Lato";
   font-style: normal;
@@ -1598,22 +1263,14 @@ button:hover {
   color: #89969f;
   padding: 10px 0;
 }
-
 .subscribe__input {
   width: 80%;
 }
-
 .subscribe__input form {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
-
 .subscribe__input form input {
   margin-right: 3rem;
   padding: 10px 20px;
@@ -1623,8 +1280,7 @@ button:hover {
   outline: none;
   width: 100%;
 }
-
-.subscribe__input form input::-webkit-input-placeholder {
+.subscribe__input form input::-moz-placeholder {
   font-family: "Lato";
   font-style: normal;
   font-weight: 600;
@@ -1632,7 +1288,6 @@ button:hover {
   line-height: 24px;
   color: #898989;
 }
-
 .subscribe__input form input:-ms-input-placeholder {
   font-family: "Lato";
   font-style: normal;
@@ -1641,16 +1296,6 @@ button:hover {
   line-height: 24px;
   color: #898989;
 }
-
-.subscribe__input form input::-ms-input-placeholder {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 24px;
-  color: #898989;
-}
-
 .subscribe__input form input::placeholder {
   font-family: "Lato";
   font-style: normal;
@@ -1659,12 +1304,10 @@ button:hover {
   line-height: 24px;
   color: #898989;
 }
-
 .subscribe__input form input:focus {
   outline: none;
   border: 1px solid #e6e6e6;
 }
-
 .subscribe__input form button {
   padding: 10px 35px;
   background: linear-gradient(84.89deg, #004077 -68.22%, #0077cc 132.22%);
@@ -1682,11 +1325,13 @@ button:hover {
   text-transform: capitalize;
 }
 
-@media only screen and (max-width: 1399.98px) {
+@media only screen and (max-width: 1600px) {
   .side__img,
 .side__img--two {
     display: none;
   }
+}
+@media only screen and (max-width: 1399.98px) {
   #transfer .transfer__cards .transfer__card {
     margin: 15px;
     text-align: center;
@@ -1698,11 +1343,9 @@ button:hover {
     padding: 50px 50px 20px 50px;
   }
 }
-
 @media only screen and (max-width: 991.98px) {
   #transfer .transfer__cards .transfer__card.custom__scale {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
   .app {
     background-color: #fcfeff;
@@ -1711,14 +1354,9 @@ button:hover {
     padding: 3rem 0;
   }
   .app__img {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    justify-content: center;
+    transform: translateY(0);
   }
   .app__text {
     padding: 20px 30px;
@@ -1727,8 +1365,6 @@ button:hover {
     width: 85%;
   }
   .app__download {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     font-display: row;
   }
@@ -1736,19 +1372,13 @@ button:hover {
     padding-right: 20px;
   }
 }
-
 @media only screen and (max-width: 767.98px) {
   .header .header__main--column .form__container {
     margin: 20px 0;
   }
   #transfer .transfer__cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .about__cards {
     text-align: center;
@@ -1764,14 +1394,9 @@ button:hover {
   }
   .app__img {
     padding: 2rem 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-transform: translateY(0rem);
-            transform: translateY(0rem);
+    justify-content: center;
+    transform: translateY(0rem);
   }
   #transfer .transfer__title {
     padding: 50px 20px 20px 20px;
@@ -1782,7 +1407,6 @@ button:hover {
     padding-bottom: 20px;
   }
 }
-
 @media only screen and (max-width: 575.98px) {
   .fleet .item {
     margin: 0 10px;
@@ -1807,8 +1431,7 @@ button:hover {
   }
   .fleet .owl-dots .active {
     background-color: #004077 !important;
-    -webkit-box-shadow: 0px 0px 0px 7px rgba(190, 205, 222, 0.75);
-            box-shadow: 0px 0px 0px 7px rgba(190, 205, 222, 0.75);
+    box-shadow: 0px 0px 0px 7px rgba(190, 205, 222, 0.75);
   }
   .projects__contant__button__group {
     margin: 10px 0;
@@ -1829,13 +1452,8 @@ button:hover {
   }
   .subscribe__input form {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .subscribe__input form input {
     margin-right: 0rem;
@@ -1845,29 +1463,19 @@ button:hover {
     padding: 10px 15px;
   }
 }
-
 .rinputs {
   background-color: #fcfeff;
 }
-
 .rinputs__box {
   background: #fdb417;
   padding: 2rem 3rem;
   border-radius: 20px;
 }
-
 .rinputs__box--item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .rinputs__box--item input {
   border-radius: 5px;
   width: 100%;
@@ -1885,8 +1493,7 @@ button:hover {
   color: #000000;
   text-align: center;
 }
-
-.rinputs__box--item input::-webkit-input-placeholder {
+.rinputs__box--item input::-moz-placeholder {
   font-family: "Lato";
   font-style: normal;
   font-weight: 600;
@@ -1895,7 +1502,6 @@ button:hover {
   /* identical to box height, or 168% */
   color: #898989;
 }
-
 .rinputs__box--item input:-ms-input-placeholder {
   font-family: "Lato";
   font-style: normal;
@@ -1905,17 +1511,6 @@ button:hover {
   /* identical to box height, or 168% */
   color: #898989;
 }
-
-.rinputs__box--item input::-ms-input-placeholder {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
-  /* identical to box height, or 168% */
-  color: #898989;
-}
-
 .rinputs__box--item input::placeholder {
   font-family: "Lato";
   font-style: normal;
@@ -1925,87 +1520,63 @@ button:hover {
   /* identical to box height, or 168% */
   color: #898989;
 }
-
 .rinputs__box--item #form-time,
 .rinputs__box--item #form-time-return {
   position: relative;
   width: 100%;
 }
-
 .rinputs__box--item #form-time input,
 .rinputs__box--item #form-time-return input {
   text-align: left;
   padding: 10px 10px;
   background-color: #fff;
 }
-
-.rinputs__box--item #form-time input::-webkit-input-placeholder,
-.rinputs__box--item #form-time-return input::-webkit-input-placeholder {
+.rinputs__box--item #form-time input::-moz-placeholder, .rinputs__box--item #form-time-return input::-moz-placeholder {
   color: #000;
 }
-
-.rinputs__box--item #form-time input:-ms-input-placeholder,
-.rinputs__box--item #form-time-return input:-ms-input-placeholder {
+.rinputs__box--item #form-time input:-ms-input-placeholder, .rinputs__box--item #form-time-return input:-ms-input-placeholder {
   color: #000;
 }
-
-.rinputs__box--item #form-time input::-ms-input-placeholder,
-.rinputs__box--item #form-time-return input::-ms-input-placeholder {
-  color: #000;
-}
-
 .rinputs__box--item #form-time input::placeholder,
 .rinputs__box--item #form-time-return input::placeholder {
   color: #000;
 }
-
 .rinputs__box--item #form-time label,
 .rinputs__box--item #form-time-return label {
   position: absolute;
   top: 50%;
   right: 13px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   cursor: pointer;
 }
-
 .rinputs__box--item #form-time .form-time-label,
 .rinputs__box--item #form-time-return .form-time-label {
   border: 1px solid #ececec;
   background-color: #fff;
   padding: 0px 6px;
   border-radius: 4px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .rinputs__box--item #form-time .form-time-label .icon-clock,
 .rinputs__box--item #form-time-return .form-time-label .icon-clock {
   margin-right: 7px;
   color: #89969f;
 }
-
 .rinputs__box--item #form-time .form-time-label .icon-clock i,
 .rinputs__box--item #form-time-return .form-time-label .icon-clock i {
   font-size: 13px;
 }
-
 .rinputs__box--item #form-time .form-time-label .icon-down-arrow,
 .rinputs__box--item #form-time-return .form-time-label .icon-down-arrow {
   font-size: 15px;
   margin-left: 8px;
   color: #89969f;
 }
-
 .rinputs__box--item #form-time .form-time-label .icon-down-arrow i,
 .rinputs__box--item #form-time-return .form-time-label .icon-down-arrow i {
   font-size: 13px;
 }
-
 .rinputs__box--item #form-time .form-time-label .form-time-text p,
 .rinputs__box--item #form-time-return .form-time-label .form-time-text p {
   font-size: 12px;
@@ -2017,48 +1588,26 @@ button:hover {
 .progressbar {
   background-color: #fcfeff;
 }
-
 .progressbar__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
   background: #fcfeff;
   border: 2px solid #fdb417;
   border-radius: 20px;
   padding: 2rem 3rem;
 }
-
 .progressbar__box .margin-t {
   margin-top: 0.6rem;
 }
-
 .progressbar__box--item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
-
 .progressbar__box--item span {
   background: #d9d9d9;
   padding-left: 20px;
@@ -2072,7 +1621,6 @@ button:hover {
   line-height: 50px;
   color: #89969f;
 }
-
 .progressbar__box--item p {
   padding: 10px 0;
   font-family: "Lato";
@@ -2082,12 +1630,10 @@ button:hover {
   line-height: 19px;
   color: #89969f;
 }
-
 .progressbar__box--item.active span {
   background: #fdb417;
   color: #ffffff;
 }
-
 .progressbar__box--item.active p {
   line-height: 19px;
   color: #000000;
@@ -2096,7 +1642,6 @@ button:hover {
 .results {
   background-color: #fcfeff;
 }
-
 .results__contant__button {
   padding: 0px 20px;
   background: #ffffff;
@@ -2104,35 +1649,24 @@ button:hover {
   border-radius: 5px;
   margin-bottom: 4rem;
 }
-
 .results__contant__button__group {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   overflow-x: auto;
   list-style: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .results__contant__button__group li {
   display: inline-block;
   margin: 8px 3px 0px 3px;
   cursor: pointer;
   position: relative;
   padding: 15px;
-  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-family: "Lato";
   font-style: normal;
   font-weight: 700;
@@ -2140,10 +1674,8 @@ button:hover {
   line-height: 29px;
   letter-spacing: -0.02em;
   color: #000000;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-
 .results__contant__button__group li:hover::after, .results__contant__button__group li.active::after {
   position: absolute;
   content: "";
@@ -2154,36 +1686,23 @@ button:hover {
   left: 0;
   border-radius: 5px 5px 0 0;
 }
-
 .results__item {
   background-color: #fff;
   -webkit-backdrop-filter: blur(150px);
           backdrop-filter: blur(150px);
-  -webkit-box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
-          box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
+  box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
   border-radius: 10px;
   padding: 2rem 2rem;
   margin: 2rem 0;
 }
-
 .results__item--first {
   padding: 1.3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #dedede;
 }
-
 .results__item--first .results__item--left h2 {
   font-family: "Roboto";
   font-style: normal;
@@ -2193,7 +1712,6 @@ button:hover {
   letter-spacing: -0.02em;
   color: #000000;
 }
-
 .results__item--first .results__item--left h4 {
   padding-top: 15px;
   font-family: "Lato";
@@ -2203,17 +1721,14 @@ button:hover {
   line-height: 174.69%;
   color: #000000;
 }
-
 .results__item--first .results__item--left h4 span {
   padding-right: 20px;
 }
-
 .results__item--first .results__item--left h4 span i {
   font-size: 14px;
   color: #130f26;
   padding-right: 10px;
 }
-
 .results__item--first .results__item--right h3 {
   font-family: "Lato";
   font-style: normal;
@@ -2223,7 +1738,6 @@ button:hover {
   letter-spacing: -0.02em;
   color: #596771;
 }
-
 .results__item--first .results__item--right h3 .price {
   font-family: "Lato";
   font-style: normal;
@@ -2233,7 +1747,6 @@ button:hover {
   color: #000000;
   padding: 0 5px;
 }
-
 .results__item--first .results__item--right h3 .discount {
   font-family: "Lato";
   font-style: normal;
@@ -2244,7 +1757,6 @@ button:hover {
           text-decoration-line: line-through;
   color: #d15455;
 }
-
 .results__item--first .results__item--right h4 {
   font-family: "Lato";
   font-style: normal;
@@ -2255,28 +1767,18 @@ button:hover {
   text-transform: capitalize;
   color: #898989;
 }
-
 .results__item--first .results__item--right h4 i {
   font-size: 16px;
   color: #130f26;
   padding-right: 10px;
 }
-
 .results__item--second {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 1.8rem;
   border-bottom: 1px dashed #dedede;
 }
-
 .results__item--second h5 {
   font-family: "Lato";
   font-style: normal;
@@ -2285,26 +1787,19 @@ button:hover {
   line-height: 174.69%;
   text-transform: capitalize;
   color: #000000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .results__item--second h5 i {
   font-size: 18px;
   padding-right: 8px;
   color: #fdb417;
 }
-
 .results__item--third {
   display: inline-block;
   float: right;
   padding: 1.5rem;
 }
-
 .results__item--third button {
   background: linear-gradient(84deg, #004077 -71.2%, #0077cc 124.92%);
   border-radius: 5px;
@@ -2322,13 +1817,11 @@ button:hover {
 .note {
   background-color: #fcfeff;
 }
-
 .note .section__title {
   text-align: left;
   float: left;
   padding-bottom: 20px;
 }
-
 .note .section__title h1 {
   text-align: left;
   font-family: "Roboto";
@@ -2339,22 +1832,18 @@ button:hover {
   letter-spacing: -0.005em;
   color: #000000;
 }
-
 .note__box {
   padding: 10px;
   border-radius: 10px;
   background-color: #fff;
-  -webkit-box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
-          box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
+  box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
 }
-
 .note__box--first {
   background-color: #fbfbfb;
   padding: 2rem;
   border-radius: 10px;
   margin: 2rem;
 }
-
 .note__box--first h2 {
   font-family: "Lato";
   font-style: normal;
@@ -2362,17 +1851,12 @@ button:hover {
   font-size: 24px;
   line-height: 63px;
   /* identical to box height, or 262% */
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   letter-spacing: -0.005em;
   color: #000000;
 }
-
 .note__box--first p {
   font-family: "Lato";
   font-style: normal;
@@ -2380,26 +1864,19 @@ button:hover {
   font-size: 14px;
   line-height: 63px;
   /* identical to box height, or 450% */
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   color: #596771;
 }
-
 .note__box--first p span {
   padding-left: 10px;
   color: #000000;
 }
-
 .note__box--second {
   padding: 0 2rem;
   margin: 2rem;
 }
-
 .note__box--second h4 {
   font-family: "Lato";
   font-style: normal;
@@ -2407,15 +1884,10 @@ button:hover {
   font-size: 16px;
   line-height: 217%;
   /* or 35px */
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: #000000;
 }
-
 .note__box--third {
   background-color: #fbfbfb;
   padding: 2rem;
@@ -2423,7 +1895,6 @@ button:hover {
   margin: 2rem 15%;
   text-align: center;
 }
-
 .note__box--third h2 {
   font-family: "Lato";
   font-style: normal;
@@ -2434,13 +1905,11 @@ button:hover {
   text-transform: capitalize;
   color: #ff3535;
 }
-
 .note__box--third h2 i {
   font-size: 18px;
   color: #ff3535;
   padding-right: 10px;
 }
-
 .note__box--third p {
   padding-top: 10px;
   font-family: "Lato";
@@ -2449,12 +1918,8 @@ button:hover {
   font-size: 14px;
   line-height: 236%;
   /* or 33px */
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   color: #000000;
 }
@@ -2462,7 +1927,6 @@ button:hover {
 .testimonial {
   background-color: #fcfeff;
 }
-
 .testimonial__text h5 {
   font-family: "Roboto";
   font-style: normal;
@@ -2474,7 +1938,6 @@ button:hover {
   color: #0160a9;
   padding-bottom: 15px;
 }
-
 .testimonial__text h1 {
   font-family: "Lato";
   font-style: normal;
@@ -2484,21 +1947,16 @@ button:hover {
   letter-spacing: -0.005em;
   color: #000000;
 }
-
 .testimonial-carousel {
   background-color: #f9f9f9;
   padding: 5rem 2rem 2rem 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .testimonial__item {
   background-color: #fff;
   margin: 0 1rem;
   border-radius: 10px;
 }
-
 .testimonial__content {
   background: rgba(255, 255, 255, 0.144);
   -webkit-backdrop-filter: blur(9.66px);
@@ -2506,19 +1964,13 @@ button:hover {
   border-radius: 9.44186px;
   padding: 15px;
   margin: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .testimonial__content--img {
   width: 100%;
   height: auto;
 }
-
 .testimonial__content h2 {
   font-family: "Franklin Gothic Medium Cond";
   font-size: 14.1628px;
@@ -2526,14 +1978,12 @@ button:hover {
   letter-spacing: 0.590116px;
   color: #000000;
 }
-
 .testimonial__content i {
   font-size: 16px;
   line-height: 16px;
   color: #ffc833;
   margin: 0 2px;
 }
-
 .testimonial__content span {
   font-family: "Lato";
   font-style: normal;
@@ -2545,7 +1995,6 @@ button:hover {
   text-transform: capitalize;
   color: #000000;
 }
-
 .testimonial__content h6 {
   font-family: "Lato";
   font-style: normal;
@@ -2557,7 +2006,6 @@ button:hover {
   text-transform: capitalize;
   color: #000000;
 }
-
 .testimonial__content h6 i {
   padding-right: 8px;
   font-size: 11px;
@@ -2565,7 +2013,6 @@ button:hover {
   color: #dadada;
   margin: 0 2px;
 }
-
 .testimonial__content h2 {
   font-family: "Lato";
   font-style: normal;
@@ -2575,7 +2022,6 @@ button:hover {
   letter-spacing: 0.590116px;
   color: #000000;
 }
-
 .testimonial__content p {
   font-family: "Lato";
   font-style: normal;
@@ -2586,17 +2032,11 @@ button:hover {
   letter-spacing: 0.590116px;
   color: #9098b1;
 }
-
 .testimonial .owl-carousel .owl-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 30px;
 }
-
 .testimonial .owl-carousel .owl-nav button {
   background-color: #cadeee;
   margin: 0 20px;
@@ -2604,25 +2044,20 @@ button:hover {
   border-radius: 50%;
   height: 40px;
 }
-
 .testimonial .owl-carousel .owl-nav button span {
   font-size: 35px;
   line-height: 90%;
   color: #0160a9;
 }
-
 .testimonial .owl-carousel .owl-nav button:hover {
   background-color: #0160a9;
 }
-
 .testimonial .owl-carousel .owl-nav button:hover span {
   color: #fff;
 }
-
 .testimonial .owl-carousel .owl-nav button:nth-child(1) {
   padding: 0 10px !important;
 }
-
 .testimonial .owl-carousel .owl-nav button:nth-child(2) {
   padding: 0 17px !important;
 }
@@ -2683,7 +2118,6 @@ button:hover {
     color: #9098b1;
   }
 }
-
 @media only screen and (max-width: 991.98px) {
   .testimonial__text {
     padding-bottom: 2rem;
@@ -2693,7 +2127,19 @@ button:hover {
     line-height: 52px;
   }
 }
-
+@media only screen and (max-width: 767.98px) {
+  .progressbar__box {
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+  }
+  .progressbar__box .progressbar__box--item {
+    padding: 1rem 0 !important;
+  }
+  .margin-t {
+    display: none;
+  }
+}
 @media only screen and (max-width: 575.98px) {
   .testimonial__text h1 {
     font-size: 24px;
@@ -2701,14 +2147,11 @@ button:hover {
     letter-spacing: 0;
   }
   .testimonial .testimonial__item {
-    -webkit-box-shadow: 0 0 10px 0 #ccc;
-            box-shadow: 0 0 10px 0 #ccc;
+    box-shadow: 0 0 10px 0 #ccc;
   }
   .testimonial-carousel {
     background-color: transparent;
     padding: 2rem 2rem 0 2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .rinputs {
@@ -2724,13 +2167,8 @@ button:hover {
   }
   .results__item--first {
     padding: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .results__item--first .results__item--left {
     padding-bottom: 1rem;
@@ -2751,9 +2189,7 @@ button:hover {
   }
   .results__item--second h5 {
     display: block;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .results__item--third {
     display: block;
@@ -2806,18 +2242,14 @@ button:hover {
     line-height: 150%;
     /* or 33px */
     display: block;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     text-align: center;
     color: #000000;
   }
 }
-
 .extra {
   background-color: #fcfeff;
 }
-
 .extra__contant__button {
   padding: 0px 20px;
   background: #ffffff;
@@ -2825,35 +2257,24 @@ button:hover {
   border-radius: 5px;
   margin-bottom: 4rem;
 }
-
 .extra__contant__button__group {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   overflow-x: auto;
   list-style: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .extra__contant__button__group li {
   display: inline-block;
   margin: 8px 3px 0px 3px;
   cursor: pointer;
   position: relative;
   padding: 15px;
-  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-family: "Lato";
   font-style: normal;
   font-weight: 500;
@@ -2863,11 +2284,9 @@ button:hover {
   letter-spacing: -0.02em;
   color: #596771;
 }
-
 .extra__contant__button__group li.active, .extra__contant__button__group li:hover {
   color: #000000;
 }
-
 .extra__contant__button__group li:hover::after, .extra__contant__button__group li.active::after {
   position: absolute;
   content: "";
@@ -2878,30 +2297,24 @@ button:hover {
   left: 0;
   border-radius: 5px 5px 0 0;
 }
-
 .extra__item {
   background-color: #fff;
   -webkit-backdrop-filter: blur(150px);
           backdrop-filter: blur(150px);
-  -webkit-box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
-          box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
+  box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
   border-radius: 10px;
   padding: 2rem 2rem;
   margin: 2rem 0;
 }
-
 .extra__item--img img {
   padding: 2rem;
-  -webkit-box-shadow: 0px 11.2941px 14.1176px #f1f4f9;
-          box-shadow: 0px 11.2941px 14.1176px #f1f4f9;
+  box-shadow: 0px 11.2941px 14.1176px #f1f4f9;
   border-radius: 14.1176px;
   border: 2px solid #0170c1;
 }
-
 .extra__item--text {
   padding: 2rem 3rem;
 }
-
 .extra__item--text h2 {
   font-family: "Roboto";
   font-style: normal;
@@ -2912,7 +2325,6 @@ button:hover {
   letter-spacing: -0.02em;
   color: #000000;
 }
-
 .extra__item--text h3 {
   font-family: "Lato";
   font-style: normal;
@@ -2923,7 +2335,6 @@ button:hover {
   letter-spacing: -0.02em;
   color: #596771;
 }
-
 .extra__item--text h3 span.price {
   font-family: "Lato";
   font-style: normal;
@@ -2935,7 +2346,6 @@ button:hover {
   color: #0077cc;
   padding: 0 10px;
 }
-
 .extra__item--text h3 span.max {
   font-family: "Lato";
   font-style: normal;
@@ -2947,7 +2357,6 @@ button:hover {
   text-transform: capitalize;
   color: #596771;
 }
-
 .extra__item--text p {
   font-family: "Lato";
   font-style: normal;
@@ -2960,7 +2369,6 @@ button:hover {
   /* main color/gray */
   color: #89969f;
 }
-
 .extra__item--input input {
   margin: 1rem 0;
   background: #ffffff;
@@ -2977,8 +2385,7 @@ button:hover {
   line-height: 22px;
   color: #000000;
 }
-
-.extra__item--input input::-webkit-input-placeholder {
+.extra__item--input input::-moz-placeholder {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -2986,7 +2393,6 @@ button:hover {
   line-height: 22px;
   color: #596771;
 }
-
 .extra__item--input input:-ms-input-placeholder {
   font-family: "Lato";
   font-style: normal;
@@ -2995,16 +2401,6 @@ button:hover {
   line-height: 22px;
   color: #596771;
 }
-
-.extra__item--input input::-ms-input-placeholder {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  color: #596771;
-}
-
 .extra__item--input input::placeholder {
   font-family: "Lato";
   font-style: normal;
@@ -3013,46 +2409,33 @@ button:hover {
   line-height: 22px;
   color: #596771;
 }
-
 .extra__item--input #form-number {
   position: relative;
 }
-
 .extra__item--input #form-number::-webkit-outer-spin-button, .extra__item--input #form-number::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
-.extra__item--input #form-number input[type="number"] {
-  -moz-appearance: textfield;
-  /* Firefox */
+.extra__item--input #form-number input[type=number] {
+  -moz-appearance: textfield; /* Firefox */
 }
-
 .extra__item--input #form-number label {
   position: absolute;
   top: 50%;
   right: 13px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   cursor: pointer;
 }
-
 .extra__item--input #form-number .number-input-label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .extra__item--input #form-number .number-input-label .number-bar {
   height: 18px;
   width: 0.5px;
   background-color: rgba(0, 0, 0, 0.15);
   margin: 0 9px;
 }
-
 .extra__item--input #form-number .number-input-label .number-input-text p {
   font-size: 12px;
   line-height: 1;
@@ -3063,13 +2446,11 @@ button:hover {
 .pdetails {
   background-color: #fcfeff;
 }
-
 .pdetails .section__title {
   text-align: left;
   float: left;
   padding-bottom: 20px;
 }
-
 .pdetails .section__title h1 {
   font-family: "Roboto";
   font-style: normal;
@@ -3080,20 +2461,16 @@ button:hover {
   letter-spacing: -0.02em;
   color: #000000;
 }
-
 .pdetails__box {
   padding: 2rem 3rem;
   border-radius: 10px;
   background-color: #fff;
-  -webkit-box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
-          box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
+  box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
   padding-right: 10%;
 }
-
 .pdetails__box--inputs {
   padding: 1rem 2rem;
 }
-
 .pdetails__box--inputs input {
   margin: 5px 0;
   background: #ffffff;
@@ -3110,8 +2487,7 @@ button:hover {
   line-height: 22px;
   color: #000000;
 }
-
-.pdetails__box--inputs input::-webkit-input-placeholder {
+.pdetails__box--inputs input::-moz-placeholder {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -3119,7 +2495,6 @@ button:hover {
   line-height: 22px;
   color: #596771;
 }
-
 .pdetails__box--inputs input:-ms-input-placeholder {
   font-family: "Lato";
   font-style: normal;
@@ -3128,16 +2503,6 @@ button:hover {
   line-height: 22px;
   color: #596771;
 }
-
-.pdetails__box--inputs input::-ms-input-placeholder {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  color: #596771;
-}
-
 .pdetails__box--inputs input::placeholder {
   font-family: "Lato";
   font-style: normal;
@@ -3146,28 +2511,19 @@ button:hover {
   line-height: 22px;
   color: #596771;
 }
-
 .pdetails__box--inputs input:focus {
   background: #fdb417;
   color: #fff;
 }
-
-.pdetails__box--inputs input:focus::-webkit-input-placeholder {
+.pdetails__box--inputs input:focus::-moz-placeholder {
   color: #fff;
 }
-
 .pdetails__box--inputs input:focus:-ms-input-placeholder {
   color: #fff;
 }
-
-.pdetails__box--inputs input:focus::-ms-input-placeholder {
-  color: #fff;
-}
-
 .pdetails__box--inputs input:focus::placeholder {
   color: #fff;
 }
-
 .pdetails__box--inputs button {
   margin: 0 20px;
   padding: 15px 45px;
@@ -3183,7 +2539,6 @@ button:hover {
   line-height: 19px;
   color: #ffffff;
 }
-
 .pdetails__box--inputs p {
   font-family: "Lato";
   font-style: normal;
@@ -3196,13 +2551,11 @@ button:hover {
 .summary {
   background-color: #fcfeff;
 }
-
 .summary .section__title {
   text-align: left;
   float: left;
   padding-bottom: 20px;
 }
-
 .summary .section__title h1 {
   font-family: "Roboto";
   font-style: normal;
@@ -3213,21 +2566,17 @@ button:hover {
   letter-spacing: -0.02em;
   color: #000000;
 }
-
 .summary__box {
   padding: 10px;
   border-radius: 10px;
   background-color: #fff;
-  -webkit-box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
-          box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
+  box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
   padding-right: 10%;
 }
-
 .summary__box--first {
   padding: 2rem;
   margin: 2rem;
 }
-
 .summary__box--first h5 {
   font-family: "Lato";
   font-style: normal;
@@ -3236,23 +2585,12 @@ button:hover {
   line-height: 23px;
   color: #344054;
 }
-
 .summary__box--first .summary__box--inputs {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
-
 .summary__box--first .summary__box--inputs input {
   margin: 5px 0;
   background: #ffffff;
@@ -3269,8 +2607,7 @@ button:hover {
   line-height: 22px;
   color: #000000;
 }
-
-.summary__box--first .summary__box--inputs input::-webkit-input-placeholder {
+.summary__box--first .summary__box--inputs input::-moz-placeholder {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -3278,7 +2615,6 @@ button:hover {
   line-height: 22px;
   color: #596771;
 }
-
 .summary__box--first .summary__box--inputs input:-ms-input-placeholder {
   font-family: "Lato";
   font-style: normal;
@@ -3287,16 +2623,6 @@ button:hover {
   line-height: 22px;
   color: #596771;
 }
-
-.summary__box--first .summary__box--inputs input::-ms-input-placeholder {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  color: #596771;
-}
-
 .summary__box--first .summary__box--inputs input::placeholder {
   font-family: "Lato";
   font-style: normal;
@@ -3305,28 +2631,19 @@ button:hover {
   line-height: 22px;
   color: #596771;
 }
-
 .summary__box--first .summary__box--inputs input:focus {
   background: #fdb417;
   color: #fff;
 }
-
-.summary__box--first .summary__box--inputs input:focus::-webkit-input-placeholder {
+.summary__box--first .summary__box--inputs input:focus::-moz-placeholder {
   color: #fff;
 }
-
 .summary__box--first .summary__box--inputs input:focus:-ms-input-placeholder {
   color: #fff;
 }
-
-.summary__box--first .summary__box--inputs input:focus::-ms-input-placeholder {
-  color: #fff;
-}
-
 .summary__box--first .summary__box--inputs input:focus::placeholder {
   color: #fff;
 }
-
 .summary__box--first .summary__box--inputs button {
   margin: 0 20px;
   padding: 15px 45px;
@@ -3342,7 +2659,6 @@ button:hover {
   line-height: 19px;
   color: #ffffff;
 }
-
 .summary__box--first .summary__box--inputs p {
   font-family: "Lato";
   font-style: normal;
@@ -3351,7 +2667,6 @@ button:hover {
   line-height: 23px;
   color: #596771;
 }
-
 .summary__box--second {
   padding: 0 2rem;
   margin: 2rem 4rem;
@@ -3359,13 +2674,11 @@ button:hover {
   border: 1px solid #efefef;
   border-radius: 8px;
 }
-
 .summary__box--second .title {
   border-bottom: 1px solid #dedede;
   padding: 1rem 0 2rem 0;
   margin-bottom: 2rem;
 }
-
 .summary__box--second h2 {
   font-family: "Lato";
   font-style: normal;
@@ -3374,28 +2687,16 @@ button:hover {
   line-height: 23px;
   color: #000000;
 }
-
 .summary__box--second .items {
   padding-bottom: 1rem;
   border-bottom: 1px dashed #ebebeb;
 }
-
 .summary__box--second .item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .summary__box--second .item p {
   font-family: "Lato";
   font-style: normal;
@@ -3404,7 +2705,6 @@ button:hover {
   line-height: 19px;
   color: #344054;
 }
-
 .summary__box--second .item p .amount {
   font-family: "Lato";
   font-style: normal;
@@ -3413,15 +2713,12 @@ button:hover {
   line-height: 19px;
   color: #000000;
 }
-
 .summary__box--second .item.discount p .amount {
   color: #fdb417;
 }
-
 .summary__box--second .item.total {
   padding: 1rem 0;
 }
-
 .summary__box--second .item.total p {
   font-family: "Lato";
   font-style: normal;
@@ -3430,7 +2727,6 @@ button:hover {
   line-height: 19px;
   color: #000000;
 }
-
 .summary__box--second .item.total p .amount {
   font-family: "Lato";
   font-style: normal;
@@ -3440,13 +2736,11 @@ button:hover {
   /* identical to box height */
   color: #000000;
 }
-
 .summary__box--third {
   padding: 0 2rem;
   margin: 2rem 4rem;
   text-align: center;
 }
-
 .summary__box--third button {
   margin: 0 20px;
   padding: 15px 20%;
@@ -3466,13 +2760,11 @@ button:hover {
 .payment {
   background-color: #fcfeff;
 }
-
 .payment .section__title {
   text-align: left;
   float: left;
   padding-bottom: 20px;
 }
-
 .payment .section__title h1 {
   font-family: "Roboto";
   font-style: normal;
@@ -3483,21 +2775,17 @@ button:hover {
   letter-spacing: -0.02em;
   color: #000000;
 }
-
 .payment__box {
   padding: 10px;
   border-radius: 10px;
   background-color: #fff;
-  -webkit-box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
-          box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
+  box-shadow: 0px 0px 40px 2px rgba(0, 119, 204, 0.1);
   padding-right: 10%;
 }
-
 .payment__box--first {
   padding: 2rem;
   margin: 1rem 2rem;
 }
-
 .payment__box--first h3 {
   font-family: "Lato";
   font-style: normal;
@@ -3507,26 +2795,21 @@ button:hover {
   color: #344054;
   padding-bottom: 10px;
 }
-
 .payment__box--first h3 i {
   font-size: 20px;
   color: #0077cc;
   padding-right: 10px;
 }
-
 .payment__box--first img {
   padding: 0 5px;
 }
-
 .payment__box--second {
   padding: 1rem 2rem;
   margin: 1rem 2rem;
 }
-
 .payment__box--second .item {
   padding: 1rem 0;
 }
-
 .payment__box--second .item h5 {
   font-family: "Lato";
   font-style: normal;
@@ -3537,7 +2820,6 @@ button:hover {
   /* Gray/700 */
   color: #344054;
 }
-
 .payment__box--second .item input {
   margin: 5px 0;
   background: #ffffff;
@@ -3554,8 +2836,7 @@ button:hover {
   line-height: 22px;
   color: #000000;
 }
-
-.payment__box--second .item input::-webkit-input-placeholder {
+.payment__box--second .item input::-moz-placeholder {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -3563,7 +2844,6 @@ button:hover {
   line-height: 22px;
   color: #596771;
 }
-
 .payment__box--second .item input:-ms-input-placeholder {
   font-family: "Lato";
   font-style: normal;
@@ -3572,16 +2852,6 @@ button:hover {
   line-height: 22px;
   color: #596771;
 }
-
-.payment__box--second .item input::-ms-input-placeholder {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  color: #596771;
-}
-
 .payment__box--second .item input::placeholder {
   font-family: "Lato";
   font-style: normal;
@@ -3590,28 +2860,19 @@ button:hover {
   line-height: 22px;
   color: #596771;
 }
-
 .payment__box--second .item input:focus {
   background: #fdb417;
   color: #fff;
 }
-
-.payment__box--second .item input:focus::-webkit-input-placeholder {
+.payment__box--second .item input:focus::-moz-placeholder {
   color: #fff;
 }
-
 .payment__box--second .item input:focus:-ms-input-placeholder {
   color: #fff;
 }
-
-.payment__box--second .item input:focus::-ms-input-placeholder {
-  color: #fff;
-}
-
 .payment__box--second .item input:focus::placeholder {
   color: #fff;
 }
-
 .payment__box--second .item p {
   font-family: "Lato";
   font-style: normal;
@@ -3621,12 +2882,10 @@ button:hover {
   /* identical to box height, or 164% */
   color: #596771;
 }
-
 .payment__box--third {
   padding: 1rem 2rem;
   margin: 1rem 2rem;
 }
-
 .payment__box--third .item label {
   width: 100%;
   font-family: "Lato";
@@ -3638,7 +2897,6 @@ button:hover {
   /* Gray/700 */
   color: #344054;
 }
-
 .payment__box--third .item input {
   margin: 5px 0;
   background: #ffffff;
@@ -3655,8 +2913,7 @@ button:hover {
   line-height: 22px;
   color: #000000;
 }
-
-.payment__box--third .item input::-webkit-input-placeholder {
+.payment__box--third .item input::-moz-placeholder {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -3664,7 +2921,6 @@ button:hover {
   line-height: 22px;
   color: #596771;
 }
-
 .payment__box--third .item input:-ms-input-placeholder {
   font-family: "Lato";
   font-style: normal;
@@ -3673,16 +2929,6 @@ button:hover {
   line-height: 22px;
   color: #596771;
 }
-
-.payment__box--third .item input::-ms-input-placeholder {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  color: #596771;
-}
-
 .payment__box--third .item input::placeholder {
   font-family: "Lato";
   font-style: normal;
@@ -3691,28 +2937,19 @@ button:hover {
   line-height: 22px;
   color: #596771;
 }
-
 .payment__box--third .item input:focus {
   background: #fdb417;
   color: #fff;
 }
-
-.payment__box--third .item input:focus::-webkit-input-placeholder {
+.payment__box--third .item input:focus::-moz-placeholder {
   color: #fff;
 }
-
 .payment__box--third .item input:focus:-ms-input-placeholder {
   color: #fff;
 }
-
-.payment__box--third .item input:focus::-ms-input-placeholder {
-  color: #fff;
-}
-
 .payment__box--third .item input:focus::placeholder {
   color: #fff;
 }
-
 .payment__box--third .item p {
   font-family: "Lato";
   font-style: normal;
@@ -3722,25 +2959,15 @@ button:hover {
   /* or 164% */
   color: #596771;
 }
-
 .payment__box--fourth {
   padding: 2rem;
   margin: 2rem;
 }
-
 .payment__box--fourth .paypal {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
 .payment__box--fourth h4 {
   font-family: "Lato";
   font-style: normal;
@@ -3749,13 +2976,11 @@ button:hover {
   line-height: 23px;
   color: #344054;
 }
-
 .payment__box--fourth h4 i {
   font-size: 20px;
   color: #0077cc;
   padding-right: 10px;
 }
-
 .payment__box--fourth p {
   font-family: "Lato";
   font-style: normal;
@@ -3767,7 +2992,6 @@ button:hover {
   padding-bottom: 10px;
   color: #667085;
 }
-
 .payment__box--fourth h3 {
   font-family: "Lato";
   font-style: normal;
@@ -3778,7 +3002,6 @@ button:hover {
   /* Dark/Dark 2 */
   color: #828282;
 }
-
 .payment__box--fourth h3 i {
   background: #fec751;
   border-radius: 50%;
@@ -3860,5 +3083,4 @@ button:hover {
     padding: 0 10px;
     margin: 2rem 20px;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

@@ -2,7 +2,6 @@
   background-color: #fcfeff;
   padding: 120px 0;
   position: relative;
-  margin-bottom: 50px;
 
   .side__img {
     position: absolute;
@@ -12,6 +11,13 @@
     img {
       width: 100%;
       height: auto;
+    }
+  }
+
+  @media only screen and (max-width: 1600px) {
+    .side__img,
+    .side__img--two {
+      display: none;
     }
   }
 
